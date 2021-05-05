@@ -34,7 +34,13 @@ namespace Projekt_w_grupie
         {
             //Kutasiarzu
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
         //KOMENTARZ
         //KOMETARZ NUMER 2
+        //chuj!
     }
 }
