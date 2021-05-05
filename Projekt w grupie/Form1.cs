@@ -41,6 +41,6 @@ namespace Projekt_w_grupie
         }
         //KOMENTARZ
         //KOMETARZ NUMER 2
-        //chuj!
+        //co ja tutaj robie
     }
 }
