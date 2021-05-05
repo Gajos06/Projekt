@@ -30,5 +30,6 @@ namespace Projekt_w_grupie
             
         }
         //KOMENTARZ
+        //KOMETARZ NUMER 2
     }
 }
