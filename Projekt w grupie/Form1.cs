@@ -29,6 +29,11 @@ namespace Projekt_w_grupie
             newForm.Show();
             
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //Kutasiarzu
+        }
         //KOMENTARZ
         //KOMETARZ NUMER 2
     }
