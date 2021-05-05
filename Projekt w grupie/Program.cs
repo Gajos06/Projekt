@@ -17,6 +17,8 @@ namespace Projekt_w_grupie
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+
+            //Co ja WidZze
         }
     }
 }
