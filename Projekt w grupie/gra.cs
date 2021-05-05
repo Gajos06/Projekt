@@ -43,10 +43,5 @@ namespace Projekt_w_grupie
         {
             button7.Enabled = false;
         }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
