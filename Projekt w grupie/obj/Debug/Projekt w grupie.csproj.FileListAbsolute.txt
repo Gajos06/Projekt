@@ -9,3 +9,14 @@ C:\Users\Bartek\source\repos\Projekt w grupie\bin\Debug\Projekt w grupie.pdb
 C:\Users\Bartek\source\repos\Projekt w grupie\obj\Debug\Projekt w grupie.exe
 C:\Users\Bartek\source\repos\Projekt w grupie\obj\Debug\Projekt w grupie.pdb
 C:\Users\Bartek\source\repos\Projekt w grupie\obj\Debug\Projekt_w_grupie.gra.resources
+C:\Users\Damian\Source\Repos\Projekt2\Projekt w grupie\bin\Debug\Projekt w grupie.exe.config
+C:\Users\Damian\Source\Repos\Projekt2\Projekt w grupie\bin\Debug\Projekt w grupie.exe
+C:\Users\Damian\Source\Repos\Projekt2\Projekt w grupie\bin\Debug\Projekt w grupie.pdb
+C:\Users\Damian\Source\Repos\Projekt2\Projekt w grupie\obj\Debug\Projekt w grupie.csprojAssemblyReference.cache
+C:\Users\Damian\Source\Repos\Projekt2\Projekt w grupie\obj\Debug\Projekt_w_grupie.Form1.resources
+C:\Users\Damian\Source\Repos\Projekt2\Projekt w grupie\obj\Debug\Projekt_w_grupie.gra.resources
+C:\Users\Damian\Source\Repos\Projekt2\Projekt w grupie\obj\Debug\Projekt_w_grupie.Properties.Resources.resources
+C:\Users\Damian\Source\Repos\Projekt2\Projekt w grupie\obj\Debug\Projekt w grupie.csproj.GenerateResource.cache
+C:\Users\Damian\Source\Repos\Projekt2\Projekt w grupie\obj\Debug\Projekt w grupie.csproj.CoreCompileInputs.cache
+C:\Users\Damian\Source\Repos\Projekt2\Projekt w grupie\obj\Debug\Projekt w grupie.exe
+C:\Users\Damian\Source\Repos\Projekt2\Projekt w grupie\obj\Debug\Projekt w grupie.pdb
