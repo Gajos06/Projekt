@@ -16,7 +16,7 @@ namespace Projekt_w_grupie
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new MainMenu());
 
             //Co ja WidZze
         }

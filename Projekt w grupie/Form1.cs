@@ -17,6 +17,7 @@ namespace Projekt_w_grupie
         {
             InitializeComponent();
             answer_textbox.Hide();
+      
         }
 
         private void LoadBazaPytan()
