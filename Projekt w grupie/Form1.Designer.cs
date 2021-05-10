@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.delay = new System.Windows.Forms.Timer(this.components);
             this.answer_textbox = new System.Windows.Forms.TextBox();
             this.nextQuestion_btn = new System.Windows.Forms.Button();
             this.Id_textBox = new System.Windows.Forms.TextBox();
@@ -39,6 +38,8 @@
             this.optionC_btn = new System.Windows.Forms.Button();
             this.optionB_btn = new System.Windows.Forms.Button();
             this.optionA_btn = new System.Windows.Forms.Button();
+            this.delay = new System.Windows.Forms.Timer(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // answer_textbox
@@ -143,6 +144,11 @@
             this.optionA_btn.UseVisualStyleBackColor = false;
             this.optionA_btn.Click += new System.EventHandler(this.optionA_btn_Click);
             // 
+            // delay
+            // 
+            this.delay.Interval = 3000;
+            this.delay.Tick += new System.EventHandler(this.delay_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -167,7 +173,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Timer delay;
         private System.Windows.Forms.TextBox answer_textbox;
         private System.Windows.Forms.Button nextQuestion_btn;
         private System.Windows.Forms.TextBox Id_textBox;
@@ -177,6 +182,8 @@
         private System.Windows.Forms.Button optionD_btn;
         private System.Windows.Forms.Button optionC_btn;
         private System.Windows.Forms.Button question_textBox;
+        private System.Windows.Forms.Timer delay;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

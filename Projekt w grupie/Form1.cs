@@ -34,20 +34,25 @@ namespace Projekt_w_grupie
             Random rand = new Random();
             int rnd = rand.Next(pytania.Count);
 
-            foreach(BazaPytan db in DatabaseDC.BazaPytan)
-                if(rnd == db.Id && pytania.Contains(db.Id))
-                {
-                info_textBox.Text = pytania.Count.ToString();
-                    Id_textBox.Text = db.Id.ToString();
-                index = pytania.IndexOf(db.Id);
-                question_textBox.Text = db.Question.ToString();
-                optionA_btn.Text = db.OptionA.ToString();
-                optionB_btn.Text = db.OptionB.ToString();
-                optionC_btn.Text = db.OptionC.ToString();
-                optionD_btn.Text = db.OptionD.ToString();
-                answer_textbox.Text = db.Answer.ToString();
-                pytania.Remove(db.Id);
-                }           
+            foreach (BazaPytan db in DatabaseDC.BazaPytan)
+            {
+                if (rnd == db.Id)
+                    do
+                    {
+                        info_textBox.Text = pytania.Count.ToString();
+                        Id_textBox.Text = db.Id.ToString();
+                        index = pytania.IndexOf(db.Id);
+                        question_textBox.Text = db.Question.ToString();
+                        optionA_btn.Text = db.OptionA.ToString();
+                        optionB_btn.Text = db.OptionB.ToString();
+                        optionC_btn.Text = db.OptionC.ToString();
+                        optionD_btn.Text = db.OptionD.ToString();
+                        answer_textbox.Text = db.Answer.ToString();
+                        pytania.Remove(db.Id);
+                    }
+                    while (pytania.Contains(db.Id));
+
+            }
         }
 
 
@@ -60,68 +65,34 @@ namespace Projekt_w_grupie
             default_color();
         }
 
+
+
         private void optionA_btn_Click(object sender, EventArgs e)
         {
-            if (optionA_btn.Text == answer_textbox.Text)
-            {
-
-                optionA_btn.BackgroundImage = Properties.Resources.correct;
-                btn_disabled();
-            }
-            else
-            {
-
-                optionA_btn.BackgroundImage = Properties.Resources.wrong;
-                btn_disabled();
-            }
+            delay.Enabled = true;
+            optionA_btn.BackgroundImage = Properties.Resources.prize;
+            btn_disabled();
         }
 
         private void optionB_btn_Click(object sender, EventArgs e)
         {
-            if (optionB_btn.Text == answer_textbox.Text)
-            {
-
-                optionB_btn.BackgroundImage = Properties.Resources.correct;
-                btn_disabled();
-            }
-            else
-            {
-
-                optionB_btn.BackgroundImage = Properties.Resources.wrong;
-                btn_disabled();
-            }
+            delay.Enabled = true;
+            optionB_btn.BackgroundImage = Properties.Resources.prize;
+            btn_disabled();
         }
 
         private void optionC_btn_Click(object sender, EventArgs e)
         {
-            if (optionC_btn.Text == answer_textbox.Text)
-            {
-
-                optionC_btn.BackgroundImage = Properties.Resources.correct;
-                btn_disabled();
-            }
-            else
-            {
-
-                optionC_btn.BackgroundImage = Properties.Resources.wrong;
-                btn_disabled();
-            }
+            delay.Enabled = true;
+            optionC_btn.BackgroundImage = Properties.Resources.prize;
+            btn_disabled();
         }
 
         private void optionD_btn_Click(object sender, EventArgs e)
         {
-            if (optionD_btn.Text == answer_textbox.Text)
-            {
-
-                optionD_btn.BackgroundImage = Properties.Resources.correct;
-                btn_disabled();
-            }
-            else
-            {
-
-                optionD_btn.BackgroundImage = Properties.Resources.wrong;
-                btn_disabled();
-            }
+            delay.Enabled = true;
+            optionD_btn.BackgroundImage = Properties.Resources.prize;
+            btn_disabled();
         }
 
         private void btn_disabled()
@@ -152,10 +123,25 @@ namespace Projekt_w_grupie
         {
             NextQuestion();
             nextQuestion_btn.Text = "NASTEPNE PYTANIE";
-            //LoadBazaPytan();
             btn_enabled();
             default_color();
+            delay.Enabled = false;
+            timer1.Enabled = false;
+        }
 
+        private void delay_Tick(object sender, EventArgs e)
+        {
+            if (optionA_btn.Text == answer_textbox.Text)
+                optionA_btn.BackgroundImage = Properties.Resources.correct;
+
+            if (optionB_btn.Text == answer_textbox.Text)
+                optionB_btn.BackgroundImage = Properties.Resources.correct;
+
+            if (optionC_btn.Text == answer_textbox.Text)
+                optionC_btn.BackgroundImage = Properties.Resources.correct;
+
+            if (optionD_btn.Text == answer_textbox.Text)
+                optionD_btn.BackgroundImage = Properties.Resources.correct;
         }
     }
 }
