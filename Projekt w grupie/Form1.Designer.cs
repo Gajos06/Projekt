@@ -28,208 +28,123 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.autorzy = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.components = new System.ComponentModel.Container();
+            this.optionA_btn = new System.Windows.Forms.Button();
+            this.start_btn = new System.Windows.Forms.Button();
+            this.optionB_btn = new System.Windows.Forms.Button();
+            this.optionC_btn = new System.Windows.Forms.Button();
+            this.optionD_btn = new System.Windows.Forms.Button();
+            this.delay = new System.Windows.Forms.Timer(this.components);
+            this.answer_textbox = new System.Windows.Forms.TextBox();
+            this.question_textBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // optionA_btn
             // 
-            this.button1.Image = global::Projekt_w_grupie.Properties.Resources.odpowiedz;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(688, 91);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Nowa Gra";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.optionA_btn.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optionA_btn.Location = new System.Drawing.Point(12, 313);
+            this.optionA_btn.Name = "optionA_btn";
+            this.optionA_btn.Size = new System.Drawing.Size(300, 98);
+            this.optionA_btn.TabIndex = 2;
+            this.optionA_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.optionA_btn.UseVisualStyleBackColor = true;
+            this.optionA_btn.Click += new System.EventHandler(this.optionA_btn_Click);
             // 
-            // button2
+            // start_btn
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Image = global::Projekt_w_grupie.Properties.Resources.odpowiedz;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button2.Location = new System.Drawing.Point(12, 109);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(688, 94);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = false;
+            this.start_btn.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.start_btn.Location = new System.Drawing.Point(160, 45);
+            this.start_btn.Name = "start_btn";
+            this.start_btn.Size = new System.Drawing.Size(300, 98);
+            this.start_btn.TabIndex = 7;
+            this.start_btn.Text = "START";
+            this.start_btn.UseVisualStyleBackColor = true;
+            this.start_btn.Click += new System.EventHandler(this.start_btn_Click);
             // 
-            // autorzy
+            // optionB_btn
             // 
-            this.autorzy.Image = global::Projekt_w_grupie.Properties.Resources.odpowiedz;
-            this.autorzy.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.autorzy.Location = new System.Drawing.Point(12, 209);
-            this.autorzy.Name = "autorzy";
-            this.autorzy.Size = new System.Drawing.Size(688, 94);
-            this.autorzy.TabIndex = 7;
-            this.autorzy.Text = "Autorzy";
-            this.autorzy.UseVisualStyleBackColor = true;
-            this.autorzy.Click += new System.EventHandler(this.autorzy_Click);
+            this.optionB_btn.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optionB_btn.Location = new System.Drawing.Point(374, 313);
+            this.optionB_btn.Name = "optionB_btn";
+            this.optionB_btn.Size = new System.Drawing.Size(300, 98);
+            this.optionB_btn.TabIndex = 9;
+            this.optionB_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.optionB_btn.UseVisualStyleBackColor = true;
+            this.optionB_btn.Click += new System.EventHandler(this.optionB_btn_Click);
             // 
-            // button3
+            // optionC_btn
             // 
-            this.button3.Image = global::Projekt_w_grupie.Properties.Resources.odpowiedz;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button3.Location = new System.Drawing.Point(12, 309);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(688, 94);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "NOWY BUTTON";
-            this.button3.UseVisualStyleBackColor = true;
+            this.optionC_btn.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optionC_btn.Location = new System.Drawing.Point(12, 438);
+            this.optionC_btn.Name = "optionC_btn";
+            this.optionC_btn.Size = new System.Drawing.Size(300, 98);
+            this.optionC_btn.TabIndex = 10;
+            this.optionC_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.optionC_btn.UseVisualStyleBackColor = true;
+            this.optionC_btn.Click += new System.EventHandler(this.optionC_btn_Click);
             // 
-            // button4
+            // optionD_btn
             // 
-            this.button4.Location = new System.Drawing.Point(810, 148);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(328, 223);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.optionD_btn.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optionD_btn.Location = new System.Drawing.Point(374, 438);
+            this.optionD_btn.Name = "optionD_btn";
+            this.optionD_btn.Size = new System.Drawing.Size(300, 98);
+            this.optionD_btn.TabIndex = 11;
+            this.optionD_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.optionD_btn.UseVisualStyleBackColor = true;
+            this.optionD_btn.Click += new System.EventHandler(this.optionD_btn_Click);
             // 
-            // button5
+            // delay
             // 
-            this.button5.Location = new System.Drawing.Point(749, 447);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(247, 69);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.delay.Interval = 1000;
+            this.delay.Tick += new System.EventHandler(this.delay_Tick);
             // 
-            // button6
+            // answer_textbox
             // 
-            this.button6.Location = new System.Drawing.Point(867, 52);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(303, 57);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.answer_textbox.Location = new System.Drawing.Point(12, 197);
+            this.answer_textbox.Name = "answer_textbox";
+            this.answer_textbox.Size = new System.Drawing.Size(100, 20);
+            this.answer_textbox.TabIndex = 12;
             // 
-            // button7
+            // question_textBox
             // 
-            this.button7.Location = new System.Drawing.Point(853, 10);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(126, 437);
-            this.button7.TabIndex = 12;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(1204, 187);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
-            this.checkBox1.TabIndex = 13;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(1204, 210);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(80, 17);
-            this.checkBox2.TabIndex = 14;
-            this.checkBox2.Text = "checkBox2";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(1204, 233);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(80, 17);
-            this.checkBox3.TabIndex = 15;
-            this.checkBox3.Text = "checkBox3";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Projekt_w_grupie.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(557, 471);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1239, 447);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "label1";
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(1133, 492);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(267, 23);
-            this.button8.TabIndex = 18;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = true;
+            this.question_textBox.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 12F);
+            this.question_textBox.Location = new System.Drawing.Point(12, 223);
+            this.question_textBox.Multiline = true;
+            this.question_textBox.Name = "question_textBox";
+            this.question_textBox.Size = new System.Drawing.Size(662, 59);
+            this.question_textBox.TabIndex = 8;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1527, 608);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.autorzy);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.answer_textbox);
+            this.Controls.Add(this.optionD_btn);
+            this.Controls.Add(this.optionC_btn);
+            this.Controls.Add(this.optionB_btn);
+            this.Controls.Add(this.question_textBox);
+            this.Controls.Add(this.start_btn);
+            this.Controls.Add(this.optionA_btn);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button autorzy;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button optionA_btn;
+        private System.Windows.Forms.Button start_btn;
+        private System.Windows.Forms.Button optionB_btn;
+        private System.Windows.Forms.Button optionC_btn;
+        private System.Windows.Forms.Button optionD_btn;
+        private System.Windows.Forms.Timer delay;
+        private System.Windows.Forms.TextBox answer_textbox;
+        private System.Windows.Forms.TextBox question_textBox;
     }
 }
 

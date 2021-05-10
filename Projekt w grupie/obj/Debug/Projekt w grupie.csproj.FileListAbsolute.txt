@@ -53,3 +53,16 @@ C:\Users\Bartek\source\repos\aaaaa\Projekt\Projekt w grupie\obj\Debug\Projekt w 
 C:\Users\Bartek\source\repos\aaaaa\Projekt\Projekt w grupie\bin\Debug\Projekt w grupie.exe.config
 C:\Users\Bartek\source\repos\aaaaa\Projekt\Projekt w grupie\bin\Debug\Projekt w grupie.exe
 C:\Users\Bartek\source\repos\aaaaa\Projekt\Projekt w grupie\bin\Debug\Projekt w grupie.pdb
+C:\Users\Damian\Desktop\PROJEKT_MILIONERZy\Projekt w grupie\bin\Debug\BazaPytan.mdf
+C:\Users\Damian\Desktop\PROJEKT_MILIONERZy\Projekt w grupie\bin\Debug\BazaPytan_log.ldf
+C:\Users\Damian\Desktop\PROJEKT_MILIONERZy\Projekt w grupie\bin\Debug\Projekt w grupie.exe.config
+C:\Users\Damian\Desktop\PROJEKT_MILIONERZy\Projekt w grupie\bin\Debug\Projekt w grupie.exe
+C:\Users\Damian\Desktop\PROJEKT_MILIONERZy\Projekt w grupie\bin\Debug\Projekt w grupie.pdb
+C:\Users\Damian\Desktop\PROJEKT_MILIONERZy\Projekt w grupie\obj\Debug\Projekt w grupie.csprojAssemblyReference.cache
+C:\Users\Damian\Desktop\PROJEKT_MILIONERZy\Projekt w grupie\obj\Debug\Projekt_w_grupie.Form1.resources
+C:\Users\Damian\Desktop\PROJEKT_MILIONERZy\Projekt w grupie\obj\Debug\Projekt_w_grupie.gra.resources
+C:\Users\Damian\Desktop\PROJEKT_MILIONERZy\Projekt w grupie\obj\Debug\Projekt_w_grupie.Properties.Resources.resources
+C:\Users\Damian\Desktop\PROJEKT_MILIONERZy\Projekt w grupie\obj\Debug\Projekt w grupie.csproj.GenerateResource.cache
+C:\Users\Damian\Desktop\PROJEKT_MILIONERZy\Projekt w grupie\obj\Debug\Projekt w grupie.csproj.CoreCompileInputs.cache
+C:\Users\Damian\Desktop\PROJEKT_MILIONERZy\Projekt w grupie\obj\Debug\Projekt w grupie.exe
+C:\Users\Damian\Desktop\PROJEKT_MILIONERZy\Projekt w grupie\obj\Debug\Projekt w grupie.pdb

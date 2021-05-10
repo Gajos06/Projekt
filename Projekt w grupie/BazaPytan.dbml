@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BazaPytan" Class="BazaPytanDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\BazaPytan.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="Projekt_w_grupie.Properties.Settings" SettingsPropertyName="BazaPytanConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.BazaPytan" Member="BazaPytan">
+    <Type Name="BazaPytan">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Question" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="OptionA" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="OptionB" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="OptionC" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="OptionD" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Answer" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
