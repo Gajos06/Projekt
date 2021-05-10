@@ -47,6 +47,7 @@ namespace Projekt_w_grupie
             this.button1.TabIndex = 1;
             this.button1.Text = "TABLICA WYNIKÓW";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -85,6 +86,7 @@ namespace Projekt_w_grupie
             this.start_btn.TabIndex = 0;
             this.start_btn.Text = "START";
             this.start_btn.UseVisualStyleBackColor = true;
+            this.start_btn.Click += new System.EventHandler(this.start_btn_Click);
             // 
             // MainMenu
             // 

@@ -13,64 +13,50 @@ namespace Projekt_w_grupie
     public partial class Form1 : Form
     {
         BazaPytanDataContext DatabaseDC = new BazaPytanDataContext();
+        List<int> pytania = new List<int>();
         public Form1()
         {
             InitializeComponent();
             answer_textbox.Hide();
-      
+            Id_textBox.Show();
         }
 
         private void LoadBazaPytan()
         {
-            question_textBox.Clear();
+            Random rnd = new Random();
             foreach (BazaPytan w in DatabaseDC.BazaPytan)
-            {
-                question_textBox.Text = w.Question.ToString();
+                if (rnd.Next(3,35) == w.Id) 
+                {
+                    pytania.Add(w.Id);
+                    Id_textBox.Text = w.Id.ToString();
+                    question_textBox.Text = w.Question.ToString();
                     optionA_btn.Text = w.OptionA.ToString();
                     optionB_btn.Text = w.OptionB.ToString();
                     optionC_btn.Text = w.OptionC.ToString();
                     optionD_btn.Text = w.OptionD.ToString();
-                    answer_textbox.Text = w.Answer.ToString();             
-            }
+                    answer_textbox.Text = w.Answer.ToString();
+                    pytania.Remove(w.Id);
+                }
         }
-        private void autorzy_Click(object sender, EventArgs e)
-        {
-            string message = "Autorzy:\nBartosz Czerwiński\nKamil Gajewicz\nDamian Sygitowicz";
-            MessageBox.Show(message);
-        }
+
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void delay_Tick(object sender, EventArgs e)
-        {
-            delay.Enabled = true;
-        }
-
-        
-        public void start_btn_Click(object sender, EventArgs e)
-        {
-            BazaPytan newQuestion = new BazaPytan();
             LoadBazaPytan();
-            newQuestion.OptionA = optionA_btn.Text;
-            newQuestion.OptionB = optionB_btn.Text;
-            newQuestion.OptionC = optionC_btn.Text;
-            newQuestion.OptionD = optionD_btn.Text;      
         }
 
         private void optionA_btn_Click(object sender, EventArgs e)
         {
             if (optionA_btn.Text == answer_textbox.Text)
             {
-                delay.Enabled = true;
+
                 optionA_btn.BackColor = Color.Green;
                 btn_disabled();
             }
             else
             {
-                delay.Enabled = true;
+
                 optionA_btn.BackColor = Color.Red;
                 btn_disabled();
             }
@@ -80,13 +66,13 @@ namespace Projekt_w_grupie
         {
             if (optionB_btn.Text == answer_textbox.Text)
             {
-                delay.Enabled = true;
+
                 optionB_btn.BackColor = Color.Green;
                 btn_disabled();
             }
             else
             {
-                delay.Enabled = true;
+
                 optionB_btn.BackColor = Color.Red;
                 btn_disabled();
             }
@@ -96,13 +82,13 @@ namespace Projekt_w_grupie
         {
             if (optionC_btn.Text == answer_textbox.Text)
             {
-                delay.Enabled = true;
+
                 optionC_btn.BackColor = Color.Green;
                 btn_disabled();
             }
             else
             {
-                delay.Enabled = true;
+
                 optionC_btn.BackColor = Color.Red;
                 btn_disabled();
             }
@@ -112,13 +98,13 @@ namespace Projekt_w_grupie
         {
             if (optionD_btn.Text == answer_textbox.Text)
             {
-                delay.Enabled = true;
+
                 optionD_btn.BackColor = Color.Green;
                 btn_disabled();
             }
             else
             {
-                delay.Enabled = true;
+
                 optionD_btn.BackColor = Color.Red;
                 btn_disabled();
             }
@@ -130,6 +116,29 @@ namespace Projekt_w_grupie
             optionB_btn.Enabled = false;
             optionC_btn.Enabled = false;
             optionD_btn.Enabled = false;
+        }
+
+        private void btn_enabled()
+        {
+            optionA_btn.Enabled = true;
+            optionB_btn.Enabled = true;
+            optionC_btn.Enabled = true;
+            optionD_btn.Enabled = true;
+        }
+
+        private void default_color()
+        {
+            optionA_btn.BackColor = Color.White;
+            optionB_btn.BackColor = Color.White;
+            optionC_btn.BackColor = Color.White;
+            optionD_btn.BackColor = Color.White;
+        }
+
+        private void nextQuestion_btn_Click(object sender, EventArgs e)
+        {
+            LoadBazaPytan();
+            btn_enabled();
+            default_color();
         }
     }
 }

@@ -12,6 +12,7 @@ namespace Projekt_w_grupie
 {
     public partial class MainMenu : Form
     {
+        BazaPytanDataContext DatabaseDC = new BazaPytanDataContext();
         public MainMenu()
         {
             InitializeComponent();
@@ -38,6 +39,20 @@ namespace Projekt_w_grupie
             Credits autorzy = new Credits();
             this.Hide();
             autorzy.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ScoreBoard tablicaWynikow = new ScoreBoard();
+            this.Hide();
+            tablicaWynikow.Show();
+        }
+
+        public void start_btn_Click(object sender, EventArgs e)
+        {
+            Form1 gra = new Form1();
+            this.Hide();
+            gra.Show();             
         }
     }
 }
