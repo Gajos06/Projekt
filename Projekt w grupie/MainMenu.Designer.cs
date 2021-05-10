@@ -84,7 +84,7 @@ namespace Projekt_w_grupie
             this.start_btn.Name = "start_btn";
             this.start_btn.Size = new System.Drawing.Size(484, 86);
             this.start_btn.TabIndex = 0;
-            this.start_btn.Text = "START";
+            this.start_btn.Text = "NOWA GRA";
             this.start_btn.UseVisualStyleBackColor = true;
             this.start_btn.Click += new System.EventHandler(this.start_btn_Click);
             // 

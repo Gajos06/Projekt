@@ -17,33 +17,47 @@ namespace Projekt_w_grupie
         public Form1()
         {
             InitializeComponent();
-            answer_textbox.Hide();
-            Id_textBox.Show();
         }
+
+
 
         private void LoadBazaPytan()
         {
-            Random rnd = new Random();
-            foreach (BazaPytan w in DatabaseDC.BazaPytan)
-                if (rnd.Next(3,35) == w.Id) 
-                {
-                    pytania.Add(w.Id);
-                    Id_textBox.Text = w.Id.ToString();
-                    question_textBox.Text = w.Question.ToString();
-                    optionA_btn.Text = w.OptionA.ToString();
-                    optionB_btn.Text = w.OptionB.ToString();
-                    optionC_btn.Text = w.OptionC.ToString();
-                    optionD_btn.Text = w.OptionD.ToString();
-                    answer_textbox.Text = w.Answer.ToString();
-                    pytania.Remove(w.Id);
-                }
+            foreach (BazaPytan db in DatabaseDC.BazaPytan)
+                pytania.Add(db.Id);
         }
 
 
+        private void NextQuestion()
+        {
+            int index = 0;
+            Random rand = new Random();
+            int rnd = rand.Next(pytania.Count);
 
-        private void Form1_Load(object sender, EventArgs e)
+            foreach(BazaPytan db in DatabaseDC.BazaPytan)
+                if(rnd == db.Id && pytania.Contains(db.Id))
+                {
+                info_textBox.Text = pytania.Count.ToString();
+                    Id_textBox.Text = db.Id.ToString();
+                index = pytania.IndexOf(db.Id);
+                question_textBox.Text = db.Question.ToString();
+                optionA_btn.Text = db.OptionA.ToString();
+                optionB_btn.Text = db.OptionB.ToString();
+                optionC_btn.Text = db.OptionC.ToString();
+                optionD_btn.Text = db.OptionD.ToString();
+                answer_textbox.Text = db.Answer.ToString();
+                pytania.Remove(db.Id);
+                }           
+        }
+
+
+        public void Form1_Load(object sender, EventArgs e)
         {
             LoadBazaPytan();
+            answer_textbox.Hide();
+            Id_textBox.Show();
+            nextQuestion_btn.Text = "START";
+            default_color();
         }
 
         private void optionA_btn_Click(object sender, EventArgs e)
@@ -51,13 +65,13 @@ namespace Projekt_w_grupie
             if (optionA_btn.Text == answer_textbox.Text)
             {
 
-                optionA_btn.BackColor = Color.Green;
+                optionA_btn.BackgroundImage = Properties.Resources.correct;
                 btn_disabled();
             }
             else
             {
 
-                optionA_btn.BackColor = Color.Red;
+                optionA_btn.BackgroundImage = Properties.Resources.wrong;
                 btn_disabled();
             }
         }
@@ -67,13 +81,13 @@ namespace Projekt_w_grupie
             if (optionB_btn.Text == answer_textbox.Text)
             {
 
-                optionB_btn.BackColor = Color.Green;
+                optionB_btn.BackgroundImage = Properties.Resources.correct;
                 btn_disabled();
             }
             else
             {
 
-                optionB_btn.BackColor = Color.Red;
+                optionB_btn.BackgroundImage = Properties.Resources.wrong;
                 btn_disabled();
             }
         }
@@ -83,13 +97,13 @@ namespace Projekt_w_grupie
             if (optionC_btn.Text == answer_textbox.Text)
             {
 
-                optionC_btn.BackColor = Color.Green;
+                optionC_btn.BackgroundImage = Properties.Resources.correct;
                 btn_disabled();
             }
             else
             {
 
-                optionC_btn.BackColor = Color.Red;
+                optionC_btn.BackgroundImage = Properties.Resources.wrong;
                 btn_disabled();
             }
         }
@@ -99,13 +113,13 @@ namespace Projekt_w_grupie
             if (optionD_btn.Text == answer_textbox.Text)
             {
 
-                optionD_btn.BackColor = Color.Green;
+                optionD_btn.BackgroundImage = Properties.Resources.correct;
                 btn_disabled();
             }
             else
             {
 
-                optionD_btn.BackColor = Color.Red;
+                optionD_btn.BackgroundImage = Properties.Resources.wrong;
                 btn_disabled();
             }
         }
@@ -128,17 +142,20 @@ namespace Projekt_w_grupie
 
         private void default_color()
         {
-            optionA_btn.BackColor = Color.White;
-            optionB_btn.BackColor = Color.White;
-            optionC_btn.BackColor = Color.White;
-            optionD_btn.BackColor = Color.White;
+            optionA_btn.BackgroundImage = Properties.Resources.newbutton;
+            optionB_btn.BackgroundImage = Properties.Resources.newbutton;
+            optionC_btn.BackgroundImage = Properties.Resources.newbutton;
+            optionD_btn.BackgroundImage = Properties.Resources.newbutton;
         }
 
         private void nextQuestion_btn_Click(object sender, EventArgs e)
         {
-            LoadBazaPytan();
+            NextQuestion();
+            nextQuestion_btn.Text = "NASTEPNE PYTANIE";
+            //LoadBazaPytan();
             btn_enabled();
             default_color();
+
         }
     }
 }

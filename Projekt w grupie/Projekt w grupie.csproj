@@ -160,6 +160,13 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>BazaPytan.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\backGround.png" />
+    <Content Include="Resources\checkpoint.png" />
+    <Content Include="Resources\correct.png" />
+    <Content Include="Resources\prize.png" />
+    <Content Include="Resources\wrong.png" />
+    <None Include="Resources\newbutton.png" />
+    <None Include="Resources\button.png" />
     <None Include="Resources\135153_blue-solid-backgrounds-screensaver_2560x1600_h.jpg" />
     <None Include="Resources\dsy.jpg" />
     <None Include="Resources\kga.jpg" />
