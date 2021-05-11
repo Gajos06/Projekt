@@ -17,6 +17,7 @@ namespace Projekt_w_grupie
         public static bool C = false;
         public static bool D = false;
         public static bool wygrana = true;
+        public int counter = 0;
         BazaPytanDataContext DatabaseDC = new BazaPytanDataContext();
         List<int> pytania = new List<int>();
         Button[] prize = new System.Windows.Forms.Button[15];
@@ -73,6 +74,7 @@ namespace Projekt_w_grupie
             default_color();
             NextQuestion();
             nextQuestion_btn.Enabled = false;
+            
         }
 
 
@@ -146,7 +148,7 @@ namespace Projekt_w_grupie
 
         //delay
         private void delay_Tick(object sender, EventArgs e)
-        {
+        {          
             //ZAZNACZAM A
             if (A)
             {
@@ -158,8 +160,9 @@ namespace Projekt_w_grupie
                 {
                     optionA_btn.BackgroundImage = Properties.Resources.correct;
                     wygrana = true;
+                    counter++;
                 }
-                    
+
                 //ZAZNACZAM A - ODP B
                 else if (optionB_btn.Text == answer_textbox.Text)
                 {
@@ -193,8 +196,9 @@ namespace Projekt_w_grupie
                 {
                     optionB_btn.BackgroundImage = Properties.Resources.correct;
                     wygrana = true;
+                    counter++;
                 }
-                    
+
                 //ZAZNACZAM B - ODPOWIEDZ A
                 else if (optionA_btn.Text == answer_textbox.Text)
                 {
@@ -228,8 +232,9 @@ namespace Projekt_w_grupie
                 {
                     optionC_btn.BackgroundImage = Properties.Resources.correct;
                     wygrana = true;
+                    counter++;
                 }
-                   
+
                 //ZAZNACZAM C - ODPOWIEDZ A
                 else if (optionA_btn.Text == answer_textbox.Text)
                 {
@@ -263,8 +268,9 @@ namespace Projekt_w_grupie
                 {
                     optionD_btn.BackgroundImage = Properties.Resources.correct;
                     wygrana = true;
+                    counter++;
                 }
-                    
+
                 //ZAZNACZM D - ODPOWIEDZ A
                 else if (optionA_btn.Text == answer_textbox.Text)
                 {
@@ -288,11 +294,16 @@ namespace Projekt_w_grupie
                 }
             }
 
-            if(wygrana == false)
-            nextQuestion_btn.Enabled = false;
-            else
-            nextQuestion_btn.Enabled = true;
 
+            delay.Enabled = false;
+            schodki();
+            if (wygrana == false)
+                nextQuestion_btn.Enabled = false;
+            else
+            {
+                nextQuestion_btn.Enabled = true;
+                helper_textBox.Text = counter.ToString();
+            }
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -346,11 +357,12 @@ namespace Projekt_w_grupie
             prize[14] = btn_15;
         }
 
-
-
-
-
-
-
+        private void schodki()
+        { 
+            for(int i=1; i<16; i++)
+                if (counter == i)
+                    prize[i-1].BackgroundImage = Properties.Resources.prize;
+                
+        }
     }
 }
