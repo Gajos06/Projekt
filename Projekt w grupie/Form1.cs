@@ -148,6 +148,36 @@ namespace Projekt_w_grupie
             
         }
 
-      
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Czy na pewno chcesz wyjść?",
+                      "Wyjście",
+                       MessageBoxButtons.YesNo,
+                       MessageBoxIcon.Information) == DialogResult.No)
+            {
+                e.Cancel = true;              
+            }
+            else
+            {
+                this.Hide();
+                MainMenu menu = new MainMenu();
+                menu.Show();
+            }
+        }
+
+        private void fifty_btn_Click(object sender, EventArgs e)
+        {
+            fifty_btn.BackgroundImage = Properties.Resources._5050Disabled;
+        }
+
+        private void audience_btn_Click(object sender, EventArgs e)
+        {
+            audience_btn.BackgroundImage = Properties.Resources.audienceDisabled;
+        }
+
+        private void swap_btn_Click(object sender, EventArgs e)
+        {
+            swap_btn.BackgroundImage = Properties.Resources.swapDisabled;
+        }
     }
 }

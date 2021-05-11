@@ -171,9 +171,17 @@
     </Content>
     <None Include="Resources\backGround.png" />
     <None Include="Resources\backGround3.png" />
+    <None Include="Resources\backGround33.png" />
+    <None Include="Resources\5050.png" />
+    <None Include="Resources\audience.png" />
+    <None Include="Resources\5050Disabled.png" />
+    <None Include="Resources\audienceDisabled.png" />
     <Content Include="Resources\checkpoint.png" />
     <Content Include="Resources\correct.png" />
+    <None Include="Resources\price_btn.png" />
     <Content Include="Resources\prize.png" />
+    <None Include="Resources\swap.png" />
+    <None Include="Resources\swapDisabled.png" />
     <Content Include="Resources\wrong.png" />
     <None Include="Resources\newbutton.png" />
     <None Include="Resources\button.png" />
