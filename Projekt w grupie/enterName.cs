@@ -26,8 +26,8 @@ namespace Projekt_w_grupie
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string toShort = "Wprowadź co najmniej 4 znaki";
-            if(name_textBox.TextLength < 4)
+            string toShort = "Wprowadź co najmniej 3 znaki";
+            if(name_textBox.TextLength < 3)
             {
                 MessageBox.Show(toShort);
             }

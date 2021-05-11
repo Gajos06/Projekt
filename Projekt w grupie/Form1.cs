@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Projekt_w_grupie
 {
@@ -25,6 +26,11 @@ namespace Projekt_w_grupie
         {
             InitializeComponent();
             add_buttons();
+            wygrana1000.SoundLocation = "wygrana1000.wav";
+            wygrana2000.SoundLocation = "wygrana2000.wav";
+            przegrana.SoundLocation = "Lose.wav";
+            wygrana500.SoundLocation = "wygrana500.wav";
+            pol_na_pol.SoundLocation = "50-50.wav";
         }
 
 
@@ -74,7 +80,7 @@ namespace Projekt_w_grupie
             default_color();
             NextQuestion();
             nextQuestion_btn.Enabled = false;
-            
+
         }
 
 
@@ -148,7 +154,7 @@ namespace Projekt_w_grupie
 
         //delay
         private void delay_Tick(object sender, EventArgs e)
-        {          
+        {
             //ZAZNACZAM A
             if (A)
             {
@@ -160,6 +166,7 @@ namespace Projekt_w_grupie
                 {
                     optionA_btn.BackgroundImage = Properties.Resources.correct;
                     wygrana = true;
+                    MuzykaWygrana();
                     counter++;
                 }
 
@@ -169,6 +176,7 @@ namespace Projekt_w_grupie
                     optionA_btn.BackgroundImage = Properties.Resources.wrong;
                     optionB_btn.BackgroundImage = Properties.Resources.correct;
                     wygrana = false;
+                    MuzykaPrzegrana();
                 }
                 //ZAZNACZAM A - ODP C
                 else if (optionC_btn.Text == answer_textbox.Text)
@@ -176,6 +184,7 @@ namespace Projekt_w_grupie
                     optionA_btn.BackgroundImage = Properties.Resources.wrong;
                     optionC_btn.BackgroundImage = Properties.Resources.correct;
                     wygrana = false;
+                    MuzykaPrzegrana();
                 }
                 //ZAZNACZAM A - ODP D
                 else if (optionD_btn.Text == answer_textbox.Text)
@@ -183,6 +192,7 @@ namespace Projekt_w_grupie
                     optionA_btn.BackgroundImage = Properties.Resources.wrong;
                     optionD_btn.BackgroundImage = Properties.Resources.correct;
                     wygrana = false;
+                    MuzykaPrzegrana();
                 }
             }
             //ZAZNACZAM B
@@ -196,7 +206,9 @@ namespace Projekt_w_grupie
                 {
                     optionB_btn.BackgroundImage = Properties.Resources.correct;
                     wygrana = true;
+                    MuzykaWygrana();
                     counter++;
+
                 }
 
                 //ZAZNACZAM B - ODPOWIEDZ A
@@ -205,6 +217,7 @@ namespace Projekt_w_grupie
                     optionB_btn.BackgroundImage = Properties.Resources.wrong;
                     optionA_btn.BackgroundImage = Properties.Resources.correct;
                     wygrana = false;
+                    MuzykaPrzegrana();
                 }
                 //ZAZNACZAM B - ODPOWIEDZ C
                 else if (optionC_btn.Text == answer_textbox.Text)
@@ -212,6 +225,7 @@ namespace Projekt_w_grupie
                     optionB_btn.BackgroundImage = Properties.Resources.wrong;
                     optionC_btn.BackgroundImage = Properties.Resources.correct;
                     wygrana = false;
+                    MuzykaPrzegrana();
                 }
                 //ZAZNACZAM B - ODPOWIEDZ D
                 else if (optionD_btn.Text == answer_textbox.Text)
@@ -219,6 +233,7 @@ namespace Projekt_w_grupie
                     optionB_btn.BackgroundImage = Properties.Resources.wrong;
                     optionD_btn.BackgroundImage = Properties.Resources.correct;
                     wygrana = false;
+                    MuzykaPrzegrana();
                 }
             }
             //ZAZNACZAM C
@@ -232,6 +247,7 @@ namespace Projekt_w_grupie
                 {
                     optionC_btn.BackgroundImage = Properties.Resources.correct;
                     wygrana = true;
+                    MuzykaWygrana();
                     counter++;
                 }
 
@@ -241,6 +257,7 @@ namespace Projekt_w_grupie
                     optionC_btn.BackgroundImage = Properties.Resources.wrong;
                     optionA_btn.BackgroundImage = Properties.Resources.correct;
                     wygrana = false;
+                    MuzykaPrzegrana();
                 }
                 //ZAZNACZAM C - ODPOWIEDZ B
                 else if (optionB_btn.Text == answer_textbox.Text)
@@ -248,6 +265,7 @@ namespace Projekt_w_grupie
                     optionC_btn.BackgroundImage = Properties.Resources.wrong;
                     optionB_btn.BackgroundImage = Properties.Resources.correct;
                     wygrana = false;
+                    MuzykaPrzegrana();
                 }
                 //ZAZNACZAM C - ODPOWIEDZ D
                 else if (optionD_btn.Text == answer_textbox.Text)
@@ -255,6 +273,7 @@ namespace Projekt_w_grupie
                     optionC_btn.BackgroundImage = Properties.Resources.wrong;
                     optionD_btn.BackgroundImage = Properties.Resources.correct;
                     wygrana = false;
+                    MuzykaPrzegrana();
                 }
             }
             //ZAZNACZAM D
@@ -268,6 +287,7 @@ namespace Projekt_w_grupie
                 {
                     optionD_btn.BackgroundImage = Properties.Resources.correct;
                     wygrana = true;
+                    MuzykaWygrana();
                     counter++;
                 }
 
@@ -277,6 +297,7 @@ namespace Projekt_w_grupie
                     optionD_btn.BackgroundImage = Properties.Resources.wrong;
                     optionA_btn.BackgroundImage = Properties.Resources.correct;
                     wygrana = false;
+                    MuzykaPrzegrana();
                 }
                 //ZAZNACZAM D - ODPOWIEDZ B
                 else if (optionB_btn.Text == answer_textbox.Text)
@@ -284,6 +305,7 @@ namespace Projekt_w_grupie
                     optionD_btn.BackgroundImage = Properties.Resources.wrong;
                     optionB_btn.BackgroundImage = Properties.Resources.correct;
                     wygrana = false;
+                    MuzykaPrzegrana();
                 }
                 //ZAZNACZAM D - ODPOWIEDZ C
                 else if (optionC_btn.Text == answer_textbox.Text)
@@ -291,6 +313,7 @@ namespace Projekt_w_grupie
                     optionD_btn.BackgroundImage = Properties.Resources.wrong;
                     optionC_btn.BackgroundImage = Properties.Resources.correct;
                     wygrana = false;
+                    MuzykaPrzegrana();
                 }
             }
 
@@ -325,16 +348,22 @@ namespace Projekt_w_grupie
         private void fifty_btn_Click(object sender, EventArgs e)
         {
             fifty_btn.BackgroundImage = Properties.Resources._5050Disabled;
+            pol_na_pol.Play();
+            fifty_btn.Enabled = false;
+
         }
 
         private void audience_btn_Click(object sender, EventArgs e)
         {
             audience_btn.BackgroundImage = Properties.Resources.audienceDisabled;
+            audience_btn.Enabled = false;
         }
 
         private void swap_btn_Click(object sender, EventArgs e)
         {
             swap_btn.BackgroundImage = Properties.Resources.swapDisabled;
+            swap_btn.Enabled = false;
+
         }
 
         private void add_buttons()
@@ -357,11 +386,43 @@ namespace Projekt_w_grupie
         }
 
         private void schodki()
-        { 
-            for(int i=1; i<16; i++)
+        {
+            for (int i = 1; i < 16; i++)
                 if (counter == i)
-                    prize[i-1].BackgroundImage = Properties.Resources.prize;
-                
+                    prize[i - 1].BackgroundImage = Properties.Resources.prize;
+
         }
+
+        System.Media.SoundPlayer wygrana1000 = new System.Media.SoundPlayer();
+        System.Media.SoundPlayer wygrana2000 = new System.Media.SoundPlayer();
+        System.Media.SoundPlayer przegrana = new System.Media.SoundPlayer();
+        System.Media.SoundPlayer wygrana500 = new System.Media.SoundPlayer();
+        System.Media.SoundPlayer pol_na_pol = new System.Media.SoundPlayer();
+
+
+
+        private void MuzykaWygrana()
+        {
+            if (counter == 0)
+            {
+                wygrana500.Play();
+            }
+
+
+            if (counter == 1)
+            {
+                wygrana1000.Play();
+            }
+            if (counter == 2)
+            {
+                wygrana2000.Play();
+            }
+        }
+
+        private void MuzykaPrzegrana()
+        {
+            przegrana.Play();
+        }
+
     }
 }
