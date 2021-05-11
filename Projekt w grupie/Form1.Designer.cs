@@ -57,7 +57,6 @@
             this.btn_15 = new System.Windows.Forms.Button();
             this.btn_14 = new System.Windows.Forms.Button();
             this.btn_13 = new System.Windows.Forms.Button();
-            this.helper_textBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // answer_textbox
@@ -442,13 +441,6 @@
             this.btn_13.Text = "250 000$";
             this.btn_13.UseVisualStyleBackColor = false;
             // 
-            // helper_textBox
-            // 
-            this.helper_textBox.Location = new System.Drawing.Point(22, 149);
-            this.helper_textBox.Name = "helper_textBox";
-            this.helper_textBox.Size = new System.Drawing.Size(147, 20);
-            this.helper_textBox.TabIndex = 41;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -456,7 +448,6 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.backGround3;
             this.ClientSize = new System.Drawing.Size(1110, 550);
-            this.Controls.Add(this.helper_textBox);
             this.Controls.Add(this.btn_15);
             this.Controls.Add(this.btn_14);
             this.Controls.Add(this.btn_13);
@@ -524,7 +515,6 @@
         private System.Windows.Forms.Button btn_15;
         private System.Windows.Forms.Button btn_14;
         private System.Windows.Forms.Button btn_13;
-        private System.Windows.Forms.TextBox helper_textBox;
     }
 }
 

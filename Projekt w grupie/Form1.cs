@@ -302,7 +302,6 @@ namespace Projekt_w_grupie
             else
             {
                 nextQuestion_btn.Enabled = true;
-                helper_textBox.Text = counter.ToString();
             }
         }
 
