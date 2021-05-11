@@ -128,7 +128,7 @@ namespace Projekt_w_grupie
             nextQuestion_btn.Enabled = false;
         }
 
-       
+       //delay
         private void delay_Tick(object sender, EventArgs e)
         {
             if (optionA_btn.Text == answer_textbox.Text)
