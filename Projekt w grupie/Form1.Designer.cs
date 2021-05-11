@@ -42,21 +42,21 @@
             this.fifty_btn = new System.Windows.Forms.Button();
             this.audience_btn = new System.Windows.Forms.Button();
             this.swap_btn = new System.Windows.Forms.Button();
-            this.btn_100 = new System.Windows.Forms.Button();
-            this.btn_200 = new System.Windows.Forms.Button();
-            this.btn_300 = new System.Windows.Forms.Button();
-            this.btn_500 = new System.Windows.Forms.Button();
-            this.btn_8000 = new System.Windows.Forms.Button();
-            this.btn_4000 = new System.Windows.Forms.Button();
-            this.btn_2000 = new System.Windows.Forms.Button();
-            this.btn_1000 = new System.Windows.Forms.Button();
-            this.btn_125000 = new System.Windows.Forms.Button();
-            this.btn_64000 = new System.Windows.Forms.Button();
-            this.btn_32000 = new System.Windows.Forms.Button();
-            this.btn_16000 = new System.Windows.Forms.Button();
-            this.btn_million = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btn_250000 = new System.Windows.Forms.Button();
+            this.btn_1 = new System.Windows.Forms.Button();
+            this.btn_2 = new System.Windows.Forms.Button();
+            this.btn_3 = new System.Windows.Forms.Button();
+            this.btn_4 = new System.Windows.Forms.Button();
+            this.btn_8 = new System.Windows.Forms.Button();
+            this.btn_7 = new System.Windows.Forms.Button();
+            this.btn_6 = new System.Windows.Forms.Button();
+            this.btn_5 = new System.Windows.Forms.Button();
+            this.btn_12 = new System.Windows.Forms.Button();
+            this.btn_11 = new System.Windows.Forms.Button();
+            this.btn_10 = new System.Windows.Forms.Button();
+            this.btn_9 = new System.Windows.Forms.Button();
+            this.btn_15 = new System.Windows.Forms.Button();
+            this.btn_14 = new System.Windows.Forms.Button();
+            this.btn_13 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // answer_textbox
@@ -216,230 +216,230 @@
             this.swap_btn.UseVisualStyleBackColor = false;
             this.swap_btn.Click += new System.EventHandler(this.swap_btn_Click);
             // 
-            // btn_100
+            // btn_1
             // 
-            this.btn_100.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_100.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
-            this.btn_100.FlatAppearance.BorderSize = 0;
-            this.btn_100.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_100.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
-            this.btn_100.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_100.Location = new System.Drawing.Point(850, 509);
-            this.btn_100.Name = "btn_100";
-            this.btn_100.Size = new System.Drawing.Size(255, 30);
-            this.btn_100.TabIndex = 26;
-            this.btn_100.Text = "100$";
-            this.btn_100.UseVisualStyleBackColor = false;
+            this.btn_1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_1.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
+            this.btn_1.FlatAppearance.BorderSize = 0;
+            this.btn_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_1.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
+            this.btn_1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_1.Location = new System.Drawing.Point(850, 509);
+            this.btn_1.Name = "btn_1";
+            this.btn_1.Size = new System.Drawing.Size(255, 30);
+            this.btn_1.TabIndex = 26;
+            this.btn_1.Text = "100$";
+            this.btn_1.UseVisualStyleBackColor = false;
             // 
-            // btn_200
+            // btn_2
             // 
-            this.btn_200.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_200.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
-            this.btn_200.FlatAppearance.BorderSize = 0;
-            this.btn_200.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_200.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
-            this.btn_200.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btn_200.Location = new System.Drawing.Point(850, 473);
-            this.btn_200.Name = "btn_200";
-            this.btn_200.Size = new System.Drawing.Size(255, 30);
-            this.btn_200.TabIndex = 27;
-            this.btn_200.Text = "200$";
-            this.btn_200.UseVisualStyleBackColor = false;
+            this.btn_2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_2.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
+            this.btn_2.FlatAppearance.BorderSize = 0;
+            this.btn_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_2.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
+            this.btn_2.ForeColor = System.Drawing.Color.DarkOrange;
+            this.btn_2.Location = new System.Drawing.Point(850, 473);
+            this.btn_2.Name = "btn_2";
+            this.btn_2.Size = new System.Drawing.Size(255, 30);
+            this.btn_2.TabIndex = 27;
+            this.btn_2.Text = "200$";
+            this.btn_2.UseVisualStyleBackColor = false;
             // 
-            // btn_300
+            // btn_3
             // 
-            this.btn_300.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_300.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
-            this.btn_300.FlatAppearance.BorderSize = 0;
-            this.btn_300.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_300.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
-            this.btn_300.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btn_300.Location = new System.Drawing.Point(850, 437);
-            this.btn_300.Name = "btn_300";
-            this.btn_300.Size = new System.Drawing.Size(255, 30);
-            this.btn_300.TabIndex = 28;
-            this.btn_300.Text = "300$";
-            this.btn_300.UseVisualStyleBackColor = false;
+            this.btn_3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_3.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
+            this.btn_3.FlatAppearance.BorderSize = 0;
+            this.btn_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_3.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
+            this.btn_3.ForeColor = System.Drawing.Color.DarkOrange;
+            this.btn_3.Location = new System.Drawing.Point(850, 437);
+            this.btn_3.Name = "btn_3";
+            this.btn_3.Size = new System.Drawing.Size(255, 30);
+            this.btn_3.TabIndex = 28;
+            this.btn_3.Text = "300$";
+            this.btn_3.UseVisualStyleBackColor = false;
             // 
-            // btn_500
+            // btn_4
             // 
-            this.btn_500.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_500.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
-            this.btn_500.FlatAppearance.BorderSize = 0;
-            this.btn_500.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_500.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
-            this.btn_500.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btn_500.Location = new System.Drawing.Point(850, 401);
-            this.btn_500.Name = "btn_500";
-            this.btn_500.Size = new System.Drawing.Size(255, 30);
-            this.btn_500.TabIndex = 29;
-            this.btn_500.Text = "500$";
-            this.btn_500.UseVisualStyleBackColor = false;
+            this.btn_4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_4.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
+            this.btn_4.FlatAppearance.BorderSize = 0;
+            this.btn_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_4.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
+            this.btn_4.ForeColor = System.Drawing.Color.DarkOrange;
+            this.btn_4.Location = new System.Drawing.Point(850, 401);
+            this.btn_4.Name = "btn_4";
+            this.btn_4.Size = new System.Drawing.Size(255, 30);
+            this.btn_4.TabIndex = 29;
+            this.btn_4.Text = "500$";
+            this.btn_4.UseVisualStyleBackColor = false;
             // 
-            // btn_8000
+            // btn_8
             // 
-            this.btn_8000.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_8000.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
-            this.btn_8000.FlatAppearance.BorderSize = 0;
-            this.btn_8000.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_8000.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
-            this.btn_8000.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btn_8000.Location = new System.Drawing.Point(850, 257);
-            this.btn_8000.Name = "btn_8000";
-            this.btn_8000.Size = new System.Drawing.Size(255, 30);
-            this.btn_8000.TabIndex = 33;
-            this.btn_8000.Text = "8 000$";
-            this.btn_8000.UseVisualStyleBackColor = false;
+            this.btn_8.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_8.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
+            this.btn_8.FlatAppearance.BorderSize = 0;
+            this.btn_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_8.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
+            this.btn_8.ForeColor = System.Drawing.Color.DarkOrange;
+            this.btn_8.Location = new System.Drawing.Point(850, 257);
+            this.btn_8.Name = "btn_8";
+            this.btn_8.Size = new System.Drawing.Size(255, 30);
+            this.btn_8.TabIndex = 33;
+            this.btn_8.Text = "8 000$";
+            this.btn_8.UseVisualStyleBackColor = false;
             // 
-            // btn_4000
+            // btn_7
             // 
-            this.btn_4000.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_4000.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
-            this.btn_4000.FlatAppearance.BorderSize = 0;
-            this.btn_4000.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_4000.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
-            this.btn_4000.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btn_4000.Location = new System.Drawing.Point(850, 293);
-            this.btn_4000.Name = "btn_4000";
-            this.btn_4000.Size = new System.Drawing.Size(255, 30);
-            this.btn_4000.TabIndex = 32;
-            this.btn_4000.Text = "4 000$";
-            this.btn_4000.UseVisualStyleBackColor = false;
+            this.btn_7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_7.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
+            this.btn_7.FlatAppearance.BorderSize = 0;
+            this.btn_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_7.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
+            this.btn_7.ForeColor = System.Drawing.Color.DarkOrange;
+            this.btn_7.Location = new System.Drawing.Point(850, 293);
+            this.btn_7.Name = "btn_7";
+            this.btn_7.Size = new System.Drawing.Size(255, 30);
+            this.btn_7.TabIndex = 32;
+            this.btn_7.Text = "4 000$";
+            this.btn_7.UseVisualStyleBackColor = false;
             // 
-            // btn_2000
+            // btn_6
             // 
-            this.btn_2000.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_2000.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
-            this.btn_2000.FlatAppearance.BorderSize = 0;
-            this.btn_2000.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_2000.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
-            this.btn_2000.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btn_2000.Location = new System.Drawing.Point(850, 329);
-            this.btn_2000.Name = "btn_2000";
-            this.btn_2000.Size = new System.Drawing.Size(255, 30);
-            this.btn_2000.TabIndex = 31;
-            this.btn_2000.Text = "2 000$";
-            this.btn_2000.UseVisualStyleBackColor = false;
+            this.btn_6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_6.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
+            this.btn_6.FlatAppearance.BorderSize = 0;
+            this.btn_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_6.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
+            this.btn_6.ForeColor = System.Drawing.Color.DarkOrange;
+            this.btn_6.Location = new System.Drawing.Point(850, 329);
+            this.btn_6.Name = "btn_6";
+            this.btn_6.Size = new System.Drawing.Size(255, 30);
+            this.btn_6.TabIndex = 31;
+            this.btn_6.Text = "2 000$";
+            this.btn_6.UseVisualStyleBackColor = false;
             // 
-            // btn_1000
+            // btn_5
             // 
-            this.btn_1000.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_1000.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
-            this.btn_1000.FlatAppearance.BorderSize = 0;
-            this.btn_1000.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_1000.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
-            this.btn_1000.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_1000.Location = new System.Drawing.Point(850, 365);
-            this.btn_1000.Name = "btn_1000";
-            this.btn_1000.Size = new System.Drawing.Size(255, 30);
-            this.btn_1000.TabIndex = 30;
-            this.btn_1000.Text = "1 000$";
-            this.btn_1000.UseVisualStyleBackColor = false;
+            this.btn_5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_5.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
+            this.btn_5.FlatAppearance.BorderSize = 0;
+            this.btn_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_5.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
+            this.btn_5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_5.Location = new System.Drawing.Point(850, 365);
+            this.btn_5.Name = "btn_5";
+            this.btn_5.Size = new System.Drawing.Size(255, 30);
+            this.btn_5.TabIndex = 30;
+            this.btn_5.Text = "1 000$";
+            this.btn_5.UseVisualStyleBackColor = false;
             // 
-            // btn_125000
+            // btn_12
             // 
-            this.btn_125000.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_125000.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
-            this.btn_125000.FlatAppearance.BorderSize = 0;
-            this.btn_125000.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_125000.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
-            this.btn_125000.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btn_125000.Location = new System.Drawing.Point(850, 113);
-            this.btn_125000.Name = "btn_125000";
-            this.btn_125000.Size = new System.Drawing.Size(255, 30);
-            this.btn_125000.TabIndex = 37;
-            this.btn_125000.Text = "125 000$";
-            this.btn_125000.UseVisualStyleBackColor = false;
+            this.btn_12.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_12.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
+            this.btn_12.FlatAppearance.BorderSize = 0;
+            this.btn_12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_12.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
+            this.btn_12.ForeColor = System.Drawing.Color.DarkOrange;
+            this.btn_12.Location = new System.Drawing.Point(850, 113);
+            this.btn_12.Name = "btn_12";
+            this.btn_12.Size = new System.Drawing.Size(255, 30);
+            this.btn_12.TabIndex = 37;
+            this.btn_12.Text = "125 000$";
+            this.btn_12.UseVisualStyleBackColor = false;
             // 
-            // btn_64000
+            // btn_11
             // 
-            this.btn_64000.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_64000.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
-            this.btn_64000.FlatAppearance.BorderSize = 0;
-            this.btn_64000.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_64000.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
-            this.btn_64000.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btn_64000.Location = new System.Drawing.Point(850, 149);
-            this.btn_64000.Name = "btn_64000";
-            this.btn_64000.Size = new System.Drawing.Size(255, 30);
-            this.btn_64000.TabIndex = 36;
-            this.btn_64000.Text = "64 000$";
-            this.btn_64000.UseVisualStyleBackColor = false;
+            this.btn_11.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_11.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
+            this.btn_11.FlatAppearance.BorderSize = 0;
+            this.btn_11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_11.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
+            this.btn_11.ForeColor = System.Drawing.Color.DarkOrange;
+            this.btn_11.Location = new System.Drawing.Point(850, 149);
+            this.btn_11.Name = "btn_11";
+            this.btn_11.Size = new System.Drawing.Size(255, 30);
+            this.btn_11.TabIndex = 36;
+            this.btn_11.Text = "64 000$";
+            this.btn_11.UseVisualStyleBackColor = false;
             // 
-            // btn_32000
+            // btn_10
             // 
-            this.btn_32000.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_32000.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
-            this.btn_32000.FlatAppearance.BorderSize = 0;
-            this.btn_32000.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_32000.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
-            this.btn_32000.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_32000.Location = new System.Drawing.Point(850, 185);
-            this.btn_32000.Name = "btn_32000";
-            this.btn_32000.Size = new System.Drawing.Size(255, 30);
-            this.btn_32000.TabIndex = 35;
-            this.btn_32000.Text = "32 000$";
-            this.btn_32000.UseVisualStyleBackColor = false;
+            this.btn_10.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_10.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
+            this.btn_10.FlatAppearance.BorderSize = 0;
+            this.btn_10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_10.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
+            this.btn_10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_10.Location = new System.Drawing.Point(850, 185);
+            this.btn_10.Name = "btn_10";
+            this.btn_10.Size = new System.Drawing.Size(255, 30);
+            this.btn_10.TabIndex = 35;
+            this.btn_10.Text = "32 000$";
+            this.btn_10.UseVisualStyleBackColor = false;
             // 
-            // btn_16000
+            // btn_9
             // 
-            this.btn_16000.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_16000.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
-            this.btn_16000.FlatAppearance.BorderSize = 0;
-            this.btn_16000.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_16000.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
-            this.btn_16000.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btn_16000.Location = new System.Drawing.Point(850, 221);
-            this.btn_16000.Name = "btn_16000";
-            this.btn_16000.Size = new System.Drawing.Size(255, 30);
-            this.btn_16000.TabIndex = 34;
-            this.btn_16000.Text = "16 000$";
-            this.btn_16000.UseVisualStyleBackColor = false;
+            this.btn_9.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_9.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
+            this.btn_9.FlatAppearance.BorderSize = 0;
+            this.btn_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_9.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
+            this.btn_9.ForeColor = System.Drawing.Color.DarkOrange;
+            this.btn_9.Location = new System.Drawing.Point(850, 221);
+            this.btn_9.Name = "btn_9";
+            this.btn_9.Size = new System.Drawing.Size(255, 30);
+            this.btn_9.TabIndex = 34;
+            this.btn_9.Text = "16 000$";
+            this.btn_9.UseVisualStyleBackColor = false;
             // 
-            // btn_million
+            // btn_15
             // 
-            this.btn_million.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_million.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
-            this.btn_million.FlatAppearance.BorderSize = 0;
-            this.btn_million.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_million.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
-            this.btn_million.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_million.Location = new System.Drawing.Point(850, 4);
-            this.btn_million.Name = "btn_million";
-            this.btn_million.Size = new System.Drawing.Size(255, 30);
-            this.btn_million.TabIndex = 40;
-            this.btn_million.Text = "1 MILLION $";
-            this.btn_million.UseVisualStyleBackColor = false;
+            this.btn_15.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_15.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
+            this.btn_15.FlatAppearance.BorderSize = 0;
+            this.btn_15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_15.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
+            this.btn_15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_15.Location = new System.Drawing.Point(850, 4);
+            this.btn_15.Name = "btn_15";
+            this.btn_15.Size = new System.Drawing.Size(255, 30);
+            this.btn_15.TabIndex = 40;
+            this.btn_15.Text = "1 MILLION $";
+            this.btn_15.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btn_14
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
-            this.button2.ForeColor = System.Drawing.Color.DarkOrange;
-            this.button2.Location = new System.Drawing.Point(850, 40);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(255, 30);
-            this.button2.TabIndex = 39;
-            this.button2.Text = "500 000$";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_14.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_14.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
+            this.btn_14.FlatAppearance.BorderSize = 0;
+            this.btn_14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_14.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
+            this.btn_14.ForeColor = System.Drawing.Color.DarkOrange;
+            this.btn_14.Location = new System.Drawing.Point(850, 40);
+            this.btn_14.Name = "btn_14";
+            this.btn_14.Size = new System.Drawing.Size(255, 30);
+            this.btn_14.TabIndex = 39;
+            this.btn_14.Text = "500 000$";
+            this.btn_14.UseVisualStyleBackColor = false;
             // 
-            // btn_250000
+            // btn_13
             // 
-            this.btn_250000.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_250000.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
-            this.btn_250000.FlatAppearance.BorderSize = 0;
-            this.btn_250000.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_250000.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
-            this.btn_250000.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btn_250000.Location = new System.Drawing.Point(850, 76);
-            this.btn_250000.Name = "btn_250000";
-            this.btn_250000.Size = new System.Drawing.Size(255, 30);
-            this.btn_250000.TabIndex = 38;
-            this.btn_250000.Text = "250 000$";
-            this.btn_250000.UseVisualStyleBackColor = false;
+            this.btn_13.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_13.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.price_btn;
+            this.btn_13.FlatAppearance.BorderSize = 0;
+            this.btn_13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_13.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
+            this.btn_13.ForeColor = System.Drawing.Color.DarkOrange;
+            this.btn_13.Location = new System.Drawing.Point(850, 76);
+            this.btn_13.Name = "btn_13";
+            this.btn_13.Size = new System.Drawing.Size(255, 30);
+            this.btn_13.TabIndex = 38;
+            this.btn_13.Text = "250 000$";
+            this.btn_13.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -448,21 +448,21 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.backGround3;
             this.ClientSize = new System.Drawing.Size(1110, 550);
-            this.Controls.Add(this.btn_million);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.btn_250000);
-            this.Controls.Add(this.btn_125000);
-            this.Controls.Add(this.btn_64000);
-            this.Controls.Add(this.btn_32000);
-            this.Controls.Add(this.btn_16000);
-            this.Controls.Add(this.btn_8000);
-            this.Controls.Add(this.btn_4000);
-            this.Controls.Add(this.btn_2000);
-            this.Controls.Add(this.btn_1000);
-            this.Controls.Add(this.btn_500);
-            this.Controls.Add(this.btn_300);
-            this.Controls.Add(this.btn_200);
-            this.Controls.Add(this.btn_100);
+            this.Controls.Add(this.btn_15);
+            this.Controls.Add(this.btn_14);
+            this.Controls.Add(this.btn_13);
+            this.Controls.Add(this.btn_12);
+            this.Controls.Add(this.btn_11);
+            this.Controls.Add(this.btn_10);
+            this.Controls.Add(this.btn_9);
+            this.Controls.Add(this.btn_8);
+            this.Controls.Add(this.btn_7);
+            this.Controls.Add(this.btn_6);
+            this.Controls.Add(this.btn_5);
+            this.Controls.Add(this.btn_4);
+            this.Controls.Add(this.btn_3);
+            this.Controls.Add(this.btn_2);
+            this.Controls.Add(this.btn_1);
             this.Controls.Add(this.swap_btn);
             this.Controls.Add(this.audience_btn);
             this.Controls.Add(this.fifty_btn);
@@ -500,21 +500,21 @@
         private System.Windows.Forms.Button fifty_btn;
         private System.Windows.Forms.Button audience_btn;
         private System.Windows.Forms.Button swap_btn;
-        private System.Windows.Forms.Button btn_100;
-        private System.Windows.Forms.Button btn_200;
-        private System.Windows.Forms.Button btn_300;
-        private System.Windows.Forms.Button btn_500;
-        private System.Windows.Forms.Button btn_8000;
-        private System.Windows.Forms.Button btn_4000;
-        private System.Windows.Forms.Button btn_2000;
-        private System.Windows.Forms.Button btn_1000;
-        private System.Windows.Forms.Button btn_125000;
-        private System.Windows.Forms.Button btn_64000;
-        private System.Windows.Forms.Button btn_32000;
-        private System.Windows.Forms.Button btn_16000;
-        private System.Windows.Forms.Button btn_million;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btn_250000;
+        private System.Windows.Forms.Button btn_1;
+        private System.Windows.Forms.Button btn_2;
+        private System.Windows.Forms.Button btn_3;
+        private System.Windows.Forms.Button btn_4;
+        private System.Windows.Forms.Button btn_8;
+        private System.Windows.Forms.Button btn_7;
+        private System.Windows.Forms.Button btn_6;
+        private System.Windows.Forms.Button btn_5;
+        private System.Windows.Forms.Button btn_12;
+        private System.Windows.Forms.Button btn_11;
+        private System.Windows.Forms.Button btn_10;
+        private System.Windows.Forms.Button btn_9;
+        private System.Windows.Forms.Button btn_15;
+        private System.Windows.Forms.Button btn_14;
+        private System.Windows.Forms.Button btn_13;
     }
 }
 

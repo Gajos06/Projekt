@@ -14,9 +14,11 @@ namespace Projekt_w_grupie
     {
         BazaPytanDataContext DatabaseDC = new BazaPytanDataContext();
         List<int> pytania = new List<int>();
+        Button[] prize = new System.Windows.Forms.Button[15];
         public Form1()
         {
             InitializeComponent();
+            add_buttons();
         }
 
 
@@ -134,7 +136,7 @@ namespace Projekt_w_grupie
         {
             if (optionA_btn.Text == answer_textbox.Text)
                 optionA_btn.BackgroundImage = Properties.Resources.correct;
-            
+                          
             if (optionB_btn.Text == answer_textbox.Text)
                 optionB_btn.BackgroundImage = Properties.Resources.correct;
           
@@ -179,5 +181,31 @@ namespace Projekt_w_grupie
         {
             swap_btn.BackgroundImage = Properties.Resources.swapDisabled;
         }
+
+        private void add_buttons()
+        {
+            prize[0] = btn_1;
+            prize[1] = btn_2;
+            prize[2] = btn_3;
+            prize[3] = btn_4;
+            prize[4] = btn_5;
+            prize[5] = btn_6;
+            prize[6] = btn_7;
+            prize[7] = btn_8;
+            prize[8] = btn_9;
+            prize[9] = btn_10;
+            prize[10] = btn_11;
+            prize[11] = btn_12;
+            prize[12] = btn_13;
+            prize[13] = btn_14;
+            prize[14] = btn_15;
+        }
+
+        
+
+        
+        
+        
+        
     }
 }
