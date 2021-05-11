@@ -31,8 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.answer_textbox = new System.Windows.Forms.TextBox();
             this.nextQuestion_btn = new System.Windows.Forms.Button();
-            this.Id_textBox = new System.Windows.Forms.TextBox();
-            this.info_textBox = new System.Windows.Forms.TextBox();
             this.question_textBox = new System.Windows.Forms.Button();
             this.optionD_btn = new System.Windows.Forms.Button();
             this.optionC_btn = new System.Windows.Forms.Button();
@@ -52,27 +50,13 @@
             // nextQuestion_btn
             // 
             this.nextQuestion_btn.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F);
-            this.nextQuestion_btn.Location = new System.Drawing.Point(509, 122);
+            this.nextQuestion_btn.Location = new System.Drawing.Point(274, 166);
             this.nextQuestion_btn.Name = "nextQuestion_btn";
             this.nextQuestion_btn.Size = new System.Drawing.Size(221, 51);
             this.nextQuestion_btn.TabIndex = 14;
             this.nextQuestion_btn.Text = "Nastepne Pytanie";
             this.nextQuestion_btn.UseVisualStyleBackColor = true;
             this.nextQuestion_btn.Click += new System.EventHandler(this.nextQuestion_btn_Click);
-            // 
-            // Id_textBox
-            // 
-            this.Id_textBox.Location = new System.Drawing.Point(123, 122);
-            this.Id_textBox.Name = "Id_textBox";
-            this.Id_textBox.Size = new System.Drawing.Size(100, 20);
-            this.Id_textBox.TabIndex = 15;
-            // 
-            // info_textBox
-            // 
-            this.info_textBox.Location = new System.Drawing.Point(781, 239);
-            this.info_textBox.Name = "info_textBox";
-            this.info_textBox.Size = new System.Drawing.Size(360, 20);
-            this.info_textBox.TabIndex = 16;
             // 
             // question_textBox
             // 
@@ -160,8 +144,6 @@
             this.Controls.Add(this.optionC_btn);
             this.Controls.Add(this.optionB_btn);
             this.Controls.Add(this.optionA_btn);
-            this.Controls.Add(this.info_textBox);
-            this.Controls.Add(this.Id_textBox);
             this.Controls.Add(this.nextQuestion_btn);
             this.Controls.Add(this.answer_textbox);
             this.Name = "Form1";
@@ -175,8 +157,6 @@
         #endregion
         private System.Windows.Forms.TextBox answer_textbox;
         private System.Windows.Forms.Button nextQuestion_btn;
-        private System.Windows.Forms.TextBox Id_textBox;
-        private System.Windows.Forms.TextBox info_textBox;
         private System.Windows.Forms.Button optionA_btn;
         private System.Windows.Forms.Button optionB_btn;
         private System.Windows.Forms.Button optionD_btn;

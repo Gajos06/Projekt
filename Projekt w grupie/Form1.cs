@@ -39,8 +39,6 @@ namespace Projekt_w_grupie
                 if (rnd == db.Id)
                     do
                     {
-                        info_textBox.Text = pytania.Count.ToString();
-                        Id_textBox.Text = db.Id.ToString();
                         index = pytania.IndexOf(db.Id);
                         question_textBox.Text = db.Question.ToString();
                         optionA_btn.Text = db.OptionA.ToString();
@@ -60,9 +58,9 @@ namespace Projekt_w_grupie
         {
             LoadBazaPytan();
             answer_textbox.Hide();
-            Id_textBox.Show();
-            nextQuestion_btn.Text = "START";
             default_color();
+            NextQuestion();
+            nextQuestion_btn.Enabled = false;
         }
 
 
@@ -101,6 +99,7 @@ namespace Projekt_w_grupie
             optionB_btn.Enabled = false;
             optionC_btn.Enabled = false;
             optionD_btn.Enabled = false;
+            nextQuestion_btn.Enabled = false;
         }
 
         private void btn_enabled()
@@ -122,13 +121,11 @@ namespace Projekt_w_grupie
         private void nextQuestion_btn_Click(object sender, EventArgs e)
         {
             NextQuestion();
-            nextQuestion_btn.Text = "NASTEPNE PYTANIE";
             btn_enabled();
             default_color();
             delay.Enabled = false;
-            timer1.Enabled = false;
-        }
 
+        }
         private void delay_Tick(object sender, EventArgs e)
         {
             if (optionA_btn.Text == answer_textbox.Text)
@@ -142,6 +139,8 @@ namespace Projekt_w_grupie
 
             if (optionD_btn.Text == answer_textbox.Text)
                 optionD_btn.BackgroundImage = Properties.Resources.correct;
+
+            nextQuestion_btn.Enabled = true;
         }
     }
 }
