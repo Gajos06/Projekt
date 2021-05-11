@@ -56,6 +56,7 @@ namespace Projekt_w_grupie
 
         public void Form1_Load(object sender, EventArgs e)
         {
+            name_btn.Text = enterName.nickName;
             LoadBazaPytan();
             answer_textbox.Hide();
             default_color();
@@ -143,13 +144,10 @@ namespace Projekt_w_grupie
             if (optionD_btn.Text == answer_textbox.Text)
                 optionD_btn.BackgroundImage = Properties.Resources.correct;
 
-         
+            nextQuestion_btn.Enabled = true;
             
         }
 
-        private void btn_Checker()
-        {
-
-        }
+      
     }
 }

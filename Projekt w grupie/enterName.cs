@@ -12,6 +12,7 @@ namespace Projekt_w_grupie
 {
     public partial class enterName : Form
     {
+        public static string nickName;
         public enterName()
         {
             InitializeComponent();
@@ -32,6 +33,7 @@ namespace Projekt_w_grupie
             }
             else
             {
+                nickName = name_textBox.Text;
                 Form1 gra = new Form1();
                 this.Hide();
                 gra.Show();             

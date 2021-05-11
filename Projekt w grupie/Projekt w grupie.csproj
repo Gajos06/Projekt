@@ -170,6 +170,7 @@
       <DependentUpon>BazaPytan.mdf</DependentUpon>
     </Content>
     <None Include="Resources\backGround.png" />
+    <None Include="Resources\backGround3.png" />
     <Content Include="Resources\checkpoint.png" />
     <Content Include="Resources\correct.png" />
     <Content Include="Resources\prize.png" />
