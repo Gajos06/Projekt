@@ -163,6 +163,16 @@ namespace Projekt_w_grupie.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap button5 {
+            get {
+                object obj = ResourceManager.GetObject("button5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap checkpoint {
             get {
                 object obj = ResourceManager.GetObject("checkpoint", resourceCulture);

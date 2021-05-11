@@ -51,7 +51,9 @@
             // 
             // nextQuestion_btn
             // 
-            this.nextQuestion_btn.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F);
+            this.nextQuestion_btn.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.button5;
+            this.nextQuestion_btn.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
+            this.nextQuestion_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.nextQuestion_btn.Location = new System.Drawing.Point(528, 168);
             this.nextQuestion_btn.Name = "nextQuestion_btn";
             this.nextQuestion_btn.Size = new System.Drawing.Size(221, 51);
