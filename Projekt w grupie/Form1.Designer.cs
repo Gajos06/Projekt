@@ -76,7 +76,7 @@
             // 
             this.optionD_btn.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.optionD_btn.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.newbutton;
-            this.optionD_btn.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
+            this.optionD_btn.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F);
             this.optionD_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.optionD_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.optionD_btn.Location = new System.Drawing.Point(394, 441);
@@ -90,7 +90,7 @@
             // 
             this.optionC_btn.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.optionC_btn.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.newbutton;
-            this.optionC_btn.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
+            this.optionC_btn.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F);
             this.optionC_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.optionC_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.optionC_btn.Location = new System.Drawing.Point(23, 441);
@@ -104,7 +104,7 @@
             // 
             this.optionB_btn.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.optionB_btn.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.newbutton;
-            this.optionB_btn.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
+            this.optionB_btn.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F);
             this.optionB_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.optionB_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.optionB_btn.Location = new System.Drawing.Point(394, 337);
@@ -118,7 +118,7 @@
             // 
             this.optionA_btn.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.optionA_btn.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.newbutton;
-            this.optionA_btn.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
+            this.optionA_btn.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optionA_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.optionA_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.optionA_btn.Location = new System.Drawing.Point(23, 337);
