@@ -125,6 +125,11 @@ namespace Projekt_w_grupie
             optionC_btn.Enabled = false;
             optionD_btn.Enabled = false;
             nextQuestion_btn.Enabled = false;
+            swap_btn.Enabled = false;
+            fifty_btn.Enabled = false;
+            audience_btn.Enabled = false;
+
+
         }
 
         private void btn_enabled()
@@ -133,6 +138,9 @@ namespace Projekt_w_grupie
             optionB_btn.Enabled = true;
             optionC_btn.Enabled = true;
             optionD_btn.Enabled = true;
+            swap_btn.Enabled = true;
+            fifty_btn.Enabled = true;
+            audience_btn.Enabled = true;
         }
 
         private void default_color()
