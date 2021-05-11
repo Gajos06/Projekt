@@ -68,8 +68,9 @@ namespace Projekt_w_grupie
         private void optionA_btn_Click(object sender, EventArgs e)
         {
             delay.Enabled = true;
-            optionA_btn.BackgroundImage = Properties.Resources.prize;
+            optionA_btn.BackgroundImage = Properties.Resources.prize;            
             btn_disabled();
+            
         }
 
         private void optionB_btn_Click(object sender, EventArgs e)
@@ -124,23 +125,31 @@ namespace Projekt_w_grupie
             btn_enabled();
             default_color();
             delay.Enabled = false;
-
+            nextQuestion_btn.Enabled = false;
         }
+
+       
         private void delay_Tick(object sender, EventArgs e)
         {
             if (optionA_btn.Text == answer_textbox.Text)
                 optionA_btn.BackgroundImage = Properties.Resources.correct;
-
+            
             if (optionB_btn.Text == answer_textbox.Text)
                 optionB_btn.BackgroundImage = Properties.Resources.correct;
-
+          
             if (optionC_btn.Text == answer_textbox.Text)
                 optionC_btn.BackgroundImage = Properties.Resources.correct;
-
+           
             if (optionD_btn.Text == answer_textbox.Text)
                 optionD_btn.BackgroundImage = Properties.Resources.correct;
 
-            nextQuestion_btn.Enabled = true;
+         
+            
+        }
+
+        private void btn_Checker()
+        {
+
         }
     }
 }

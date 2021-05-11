@@ -38,11 +38,12 @@
             this.optionA_btn = new System.Windows.Forms.Button();
             this.delay = new System.Windows.Forms.Timer(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.name_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // answer_textbox
             // 
-            this.answer_textbox.Location = new System.Drawing.Point(12, 122);
+            this.answer_textbox.Location = new System.Drawing.Point(12, 12);
             this.answer_textbox.Name = "answer_textbox";
             this.answer_textbox.Size = new System.Drawing.Size(100, 20);
             this.answer_textbox.TabIndex = 12;
@@ -133,12 +134,25 @@
             this.delay.Interval = 3000;
             this.delay.Tick += new System.EventHandler(this.delay_Tick);
             // 
+            // name_btn
+            // 
+            this.name_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.name_btn.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.name_btn.Image = global::Projekt_w_grupie.Properties.Resources.general;
+            this.name_btn.Location = new System.Drawing.Point(12, 12);
+            this.name_btn.Name = "name_btn";
+            this.name_btn.Size = new System.Drawing.Size(213, 46);
+            this.name_btn.TabIndex = 22;
+            this.name_btn.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1527, 608);
+            this.Controls.Add(this.name_btn);
             this.Controls.Add(this.question_textBox);
             this.Controls.Add(this.optionD_btn);
             this.Controls.Add(this.optionC_btn);
@@ -164,6 +178,7 @@
         private System.Windows.Forms.Button question_textBox;
         private System.Windows.Forms.Timer delay;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button name_btn;
     }
 }
 
