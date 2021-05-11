@@ -12,6 +12,11 @@ namespace Projekt_w_grupie
 {
     public partial class Form1 : Form
     {
+        public static bool A = false;
+        public static bool B = false;
+        public static bool C = false;
+        public static bool D = false;
+        public static bool wygrana = true;
         BazaPytanDataContext DatabaseDC = new BazaPytanDataContext();
         List<int> pytania = new List<int>();
         Button[] prize = new System.Windows.Forms.Button[15];
@@ -32,6 +37,10 @@ namespace Projekt_w_grupie
 
         private void NextQuestion()
         {
+            A = false;
+            B = false;
+            C = false;
+            D = false;
             int index = 0;
             Random rand = new Random();
             int rnd = rand.Next(pytania.Count);
@@ -70,14 +79,16 @@ namespace Projekt_w_grupie
 
         private void optionA_btn_Click(object sender, EventArgs e)
         {
+            A = true;
             delay.Enabled = true;
-            optionA_btn.BackgroundImage = Properties.Resources.checkpoint;           
+            optionA_btn.BackgroundImage = Properties.Resources.checkpoint;
             btn_disabled();
-            
+
         }
 
         private void optionB_btn_Click(object sender, EventArgs e)
         {
+            B = true;
             delay.Enabled = true;
             optionB_btn.BackgroundImage = Properties.Resources.checkpoint;
             btn_disabled();
@@ -85,6 +96,7 @@ namespace Projekt_w_grupie
 
         private void optionC_btn_Click(object sender, EventArgs e)
         {
+            C = true;
             delay.Enabled = true;
             optionC_btn.BackgroundImage = Properties.Resources.checkpoint;
             btn_disabled();
@@ -92,6 +104,7 @@ namespace Projekt_w_grupie
 
         private void optionD_btn_Click(object sender, EventArgs e)
         {
+            D = true;
             delay.Enabled = true;
             optionD_btn.BackgroundImage = Properties.Resources.checkpoint;
             btn_disabled();
@@ -131,23 +144,155 @@ namespace Projekt_w_grupie
             nextQuestion_btn.Enabled = false;
         }
 
-       //delay
+        //delay
         private void delay_Tick(object sender, EventArgs e)
         {
-            if (optionA_btn.Text == answer_textbox.Text)
-                optionA_btn.BackgroundImage = Properties.Resources.correct;
-                          
-            if (optionB_btn.Text == answer_textbox.Text)
-                optionB_btn.BackgroundImage = Properties.Resources.correct;
-          
-            if (optionC_btn.Text == answer_textbox.Text)
-                optionC_btn.BackgroundImage = Properties.Resources.correct;
-           
-            if (optionD_btn.Text == answer_textbox.Text)
-                optionD_btn.BackgroundImage = Properties.Resources.correct;
+            //ZAZNACZAM A
+            if (A)
+            {
+                B = false;
+                C = false;
+                D = false;
+                //ODP A
+                if (optionA_btn.Text == answer_textbox.Text)
+                {
+                    optionA_btn.BackgroundImage = Properties.Resources.correct;
+                    wygrana = true;
+                }
+                    
+                //ZAZNACZAM A - ODP B
+                else if (optionB_btn.Text == answer_textbox.Text)
+                {
+                    optionA_btn.BackgroundImage = Properties.Resources.wrong;
+                    optionB_btn.BackgroundImage = Properties.Resources.correct;
+                    wygrana = false;
+                }
+                //ZAZNACZAM A - ODP C
+                else if (optionC_btn.Text == answer_textbox.Text)
+                {
+                    optionA_btn.BackgroundImage = Properties.Resources.wrong;
+                    optionC_btn.BackgroundImage = Properties.Resources.correct;
+                    wygrana = false;
+                }
+                //ZAZNACZAM A - ODP D
+                else if (optionD_btn.Text == answer_textbox.Text)
+                {
+                    optionA_btn.BackgroundImage = Properties.Resources.wrong;
+                    optionD_btn.BackgroundImage = Properties.Resources.correct;
+                    wygrana = false;
+                }
+            }
+            //ZAZNACZAM B
+            if (B)
+            {
+                A = false;
+                C = false;
+                D = false;
+                //ODP B
+                if (optionB_btn.Text == answer_textbox.Text)
+                {
+                    optionB_btn.BackgroundImage = Properties.Resources.correct;
+                    wygrana = true;
+                }
+                    
+                //ZAZNACZAM B - ODPOWIEDZ A
+                else if (optionA_btn.Text == answer_textbox.Text)
+                {
+                    optionB_btn.BackgroundImage = Properties.Resources.wrong;
+                    optionA_btn.BackgroundImage = Properties.Resources.correct;
+                    wygrana = false;
+                }
+                //ZAZNACZAM B - ODPOWIEDZ C
+                else if (optionC_btn.Text == answer_textbox.Text)
+                {
+                    optionB_btn.BackgroundImage = Properties.Resources.wrong;
+                    optionC_btn.BackgroundImage = Properties.Resources.correct;
+                    wygrana = false;
+                }
+                //ZAZNACZAM B - ODPOWIEDZ D
+                else if (optionD_btn.Text == answer_textbox.Text)
+                {
+                    optionB_btn.BackgroundImage = Properties.Resources.wrong;
+                    optionD_btn.BackgroundImage = Properties.Resources.correct;
+                    wygrana = false;
+                }
+            }
+            //ZAZNACZAM C
+            if (C)
+            {
+                A = false;
+                B = false;
+                D = false;
+                //ODP C
+                if (optionC_btn.Text == answer_textbox.Text)
+                {
+                    optionC_btn.BackgroundImage = Properties.Resources.correct;
+                    wygrana = true;
+                }
+                   
+                //ZAZNACZAM C - ODPOWIEDZ A
+                else if (optionA_btn.Text == answer_textbox.Text)
+                {
+                    optionC_btn.BackgroundImage = Properties.Resources.wrong;
+                    optionA_btn.BackgroundImage = Properties.Resources.correct;
+                    wygrana = false;
+                }
+                //ZAZNACZAM C - ODPOWIEDZ B
+                else if (optionB_btn.Text == answer_textbox.Text)
+                {
+                    optionC_btn.BackgroundImage = Properties.Resources.wrong;
+                    optionB_btn.BackgroundImage = Properties.Resources.correct;
+                    wygrana = false;
+                }
+                //ZAZNACZAM C - ODPOWIEDZ D
+                else if (optionD_btn.Text == answer_textbox.Text)
+                {
+                    optionC_btn.BackgroundImage = Properties.Resources.wrong;
+                    optionD_btn.BackgroundImage = Properties.Resources.correct;
+                    wygrana = false;
+                }
+            }
+            //ZAZNACZAM D
+            if (D)
+            {
+                A = false;
+                B = false;
+                C = false;
+                //ODP D
+                if (optionD_btn.Text == answer_textbox.Text)
+                {
+                    optionD_btn.BackgroundImage = Properties.Resources.correct;
+                    wygrana = true;
+                }
+                    
+                //ZAZNACZM D - ODPOWIEDZ A
+                else if (optionA_btn.Text == answer_textbox.Text)
+                {
+                    optionD_btn.BackgroundImage = Properties.Resources.wrong;
+                    optionA_btn.BackgroundImage = Properties.Resources.correct;
+                    wygrana = false;
+                }
+                //ZAZNACZAM D - ODPOWIEDZ B
+                else if (optionB_btn.Text == answer_textbox.Text)
+                {
+                    optionD_btn.BackgroundImage = Properties.Resources.wrong;
+                    optionB_btn.BackgroundImage = Properties.Resources.correct;
+                    wygrana = false;
+                }
+                //ZAZNACZAM D - ODPOWIEDZ C
+                else if (optionC_btn.Text == answer_textbox.Text)
+                {
+                    optionD_btn.BackgroundImage = Properties.Resources.wrong;
+                    optionC_btn.BackgroundImage = Properties.Resources.correct;
+                    wygrana = false;
+                }
+            }
 
+            if(wygrana == false)
+            nextQuestion_btn.Enabled = false;
+            else
             nextQuestion_btn.Enabled = true;
-            
+
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -157,7 +302,7 @@ namespace Projekt_w_grupie
                        MessageBoxButtons.YesNo,
                        MessageBoxIcon.Information) == DialogResult.No)
             {
-                e.Cancel = true;              
+                e.Cancel = true;
             }
             else
             {
@@ -201,11 +346,11 @@ namespace Projekt_w_grupie
             prize[14] = btn_15;
         }
 
-        
 
-        
-        
-        
-        
+
+
+
+
+
     }
 }
