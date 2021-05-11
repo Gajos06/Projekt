@@ -69,7 +69,7 @@ namespace Projekt_w_grupie
         private void optionA_btn_Click(object sender, EventArgs e)
         {
             delay.Enabled = true;
-            optionA_btn.BackgroundImage = Properties.Resources.prize;            
+            optionA_btn.BackgroundImage = Properties.Resources.checkpoint;           
             btn_disabled();
             
         }
@@ -77,21 +77,21 @@ namespace Projekt_w_grupie
         private void optionB_btn_Click(object sender, EventArgs e)
         {
             delay.Enabled = true;
-            optionB_btn.BackgroundImage = Properties.Resources.prize;
+            optionB_btn.BackgroundImage = Properties.Resources.checkpoint;
             btn_disabled();
         }
 
         private void optionC_btn_Click(object sender, EventArgs e)
         {
             delay.Enabled = true;
-            optionC_btn.BackgroundImage = Properties.Resources.prize;
+            optionC_btn.BackgroundImage = Properties.Resources.checkpoint;
             btn_disabled();
         }
 
         private void optionD_btn_Click(object sender, EventArgs e)
         {
             delay.Enabled = true;
-            optionD_btn.BackgroundImage = Properties.Resources.prize;
+            optionD_btn.BackgroundImage = Properties.Resources.checkpoint;
             btn_disabled();
         }
 
