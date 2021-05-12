@@ -331,9 +331,7 @@ namespace Projekt_w_grupie
             if (wygrana == false)
                 nextQuestion_btn.Enabled = false;
             else
-            {
                 nextQuestion_btn.Enabled = true;
-            }
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
