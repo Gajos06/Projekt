@@ -59,6 +59,8 @@
             this.btn_13 = new System.Windows.Forms.Button();
             this.label_timer = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label = new System.Windows.Forms.Label();
+            this.label_pkt = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // answer_textbox
@@ -447,6 +449,7 @@
             // 
             this.label_timer.AutoSize = true;
             this.label_timer.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_timer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label_timer.Font = new System.Drawing.Font("Copperplate Gothic Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_timer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label_timer.Location = new System.Drawing.Point(262, 15);
@@ -454,11 +457,39 @@
             this.label_timer.Size = new System.Drawing.Size(118, 30);
             this.label_timer.TabIndex = 41;
             this.label_timer.Text = "label1";
+            this.label_timer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // timer1
             // 
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label.Font = new System.Drawing.Font("Copperplate Gothic Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label.Location = new System.Drawing.Point(17, 74);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(82, 30);
+            this.label.TabIndex = 42;
+            this.label.Text = "PKT:";
+            this.label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_pkt
+            // 
+            this.label_pkt.AutoSize = true;
+            this.label_pkt.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_pkt.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label_pkt.Font = new System.Drawing.Font("Copperplate Gothic Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_pkt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label_pkt.Location = new System.Drawing.Point(105, 74);
+            this.label_pkt.Name = "label_pkt";
+            this.label_pkt.Size = new System.Drawing.Size(0, 30);
+            this.label_pkt.TabIndex = 43;
+            this.label_pkt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
@@ -467,6 +498,8 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.backGround3;
             this.ClientSize = new System.Drawing.Size(1110, 550);
+            this.Controls.Add(this.label_pkt);
+            this.Controls.Add(this.label);
             this.Controls.Add(this.label_timer);
             this.Controls.Add(this.btn_15);
             this.Controls.Add(this.btn_14);
@@ -537,6 +570,8 @@
         private System.Windows.Forms.Button btn_13;
         private System.Windows.Forms.Label label_timer;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label;
+        private System.Windows.Forms.Label label_pkt;
     }
 }
 

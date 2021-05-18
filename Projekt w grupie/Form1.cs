@@ -23,11 +23,14 @@ namespace Projekt_w_grupie
         List<int> pytania = new List<int>();
         Button[] prize = new System.Windows.Forms.Button[15];
         public static int timeCounter = 60;
+        public static double pkt;
+        public static double suma_pkt = 0.0;
         public Form1()
         {
             InitializeComponent();
             add_buttons();
             label_timer.Text = "";
+            label_pkt.Text = pkt.ToString();
             wygrana1000.SoundLocation = "wygrana1000.wav";
             wygrana2000.SoundLocation = "wygrana2000.wav";
             przegrana.SoundLocation = "Lose.wav";
@@ -77,13 +80,17 @@ namespace Projekt_w_grupie
 
         public void Form1_Load(object sender, EventArgs e)
         {
+            pkt = 0;
+            suma_pkt = 0;
+            timeCounter = 60;
+            timer1.Enabled = true;
+            label_pkt.Text = pkt.ToString();
             name_btn.Text = enterName.nickName;
             LoadBazaPytan();
             answer_textbox.Hide();
             default_color();
             NextQuestion();
             nextQuestion_btn.Enabled = false;
-
         }
 
 
@@ -180,7 +187,7 @@ namespace Projekt_w_grupie
             NextQuestion();
             btn_enabled();
             default_color();
-            delay.Enabled = false;
+            delay.Enabled = false;           
             timer1.Enabled = true;
             timeCounter = 60;
             nextQuestion_btn.Enabled = false;
@@ -354,13 +361,9 @@ namespace Projekt_w_grupie
 
 
 
-
+            
             delay.Enabled = false;
-            schodki();
-            if (wygrana == false)
-                nextQuestion_btn.Enabled = false;
-            else
-                nextQuestion_btn.Enabled = true;
+            schodki();                       
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -526,10 +529,22 @@ namespace Projekt_w_grupie
 
         private void schodki()
         {
-            for (int i = 1; i < 16; i++)
-                if (counter == i)
-                    prize[i - 1].BackgroundImage = Properties.Resources.prize;
+            if(wygrana == true)
+            {
+                nextQuestion_btn.Enabled = true;
+                for (int i = 1; i < 16; i++)
+                    if (counter == i)
+                    {
+                        prize[i - 1].BackgroundImage = Properties.Resources.prize;
+                        pkt += Math.Pow(i, 2) * 100;
+                        suma_pkt += pkt;
+                    }
+            }
+            else
+                nextQuestion_btn.Enabled = false;
 
+
+            label_pkt.Text = suma_pkt.ToString();
         }
 
         System.Media.SoundPlayer wygrana1000 = new System.Media.SoundPlayer();
@@ -567,7 +582,10 @@ namespace Projekt_w_grupie
         {
             timeCounter--;
             if (A == true || B == true || C == true || D == true)
+            {
                 timer1.Stop();
+                pkt = timeCounter * 10;               
+            }
             label_timer.Text = timeCounter.ToString();
         }
     }
