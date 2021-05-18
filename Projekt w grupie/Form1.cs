@@ -356,6 +356,106 @@ namespace Projekt_w_grupie
             fifty_btn.BackgroundImage = Properties.Resources._5050Disabled;
             pol_na_pol.Play();
             fifty_btn.Enabled = false;
+            Random randn = new Random();
+
+
+            if (optionA_btn.Text == answer_textbox.Text)
+            {
+               
+                int randomNumber = randn.Next(1, 3);
+                if(randomNumber==1)
+                {
+                    optionC_btn.Enabled = false;
+                    optionD_btn.Enabled = false;
+                }
+                if (randomNumber == 2)
+                {
+                    optionB_btn.Enabled = false;
+                    optionD_btn.Enabled = false;
+                }
+                if (randomNumber == 3)
+                {
+                    optionB_btn.Enabled = false;
+                    optionC_btn.Enabled = false;
+                }
+
+
+
+            }
+            if (optionB_btn.Text == answer_textbox.Text)
+            {
+                
+                              
+                int randomNumber = randn.Next(1, 3);
+                if (randomNumber == 1)
+                {
+                    optionA_btn.Enabled = false;
+                    optionC_btn.Enabled = false;
+                }
+                if (randomNumber == 2)
+                {
+                    optionA_btn.Enabled = false;
+                    optionD_btn.Enabled = false;
+                }
+                if (randomNumber == 3)
+                {
+                    optionC_btn.Enabled = false;
+                    optionD_btn.Enabled = false;
+                }
+
+
+            }
+            if (optionC_btn.Text == answer_textbox.Text)
+            {
+                
+
+                int randomNumber = randn.Next(1, 3);
+                if (randomNumber == 1)
+                {
+                    optionA_btn.Enabled = false;
+                    optionB_btn.Enabled = false;
+                }
+                if (randomNumber == 2)
+                {
+                    optionA_btn.Enabled = false;
+                    optionD_btn.Enabled = false;
+                }
+                if (randomNumber == 3)
+                {
+                    optionB_btn.Enabled = false;
+                    optionD_btn.Enabled = false;
+                }
+
+
+            }
+            if (optionD_btn.Text == answer_textbox.Text)
+            {
+                     
+                
+                int randomNumber = randn.Next(1, 3);
+                if (randomNumber == 1)
+                {
+                    optionA_btn.Enabled = false;
+                    optionB_btn.Enabled = false;
+                }
+                if (randomNumber == 2)
+                {
+                    optionA_btn.Enabled = false;
+                    optionC_btn.Enabled = false;
+                }
+                if (randomNumber == 3)
+                {
+                    optionB_btn.Enabled = false;
+                    optionC_btn.Enabled = false;
+                }
+
+
+            }
+
+
+
+
+
 
         }
 
