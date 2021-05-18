@@ -138,9 +138,30 @@ namespace Projekt_w_grupie
             optionB_btn.Enabled = true;
             optionC_btn.Enabled = true;
             optionD_btn.Enabled = true;
-            swap_btn.Enabled = true;
-            fifty_btn.Enabled = true;
-            audience_btn.Enabled = true;
+
+
+            {
+                if (swap_btn.Tag == "11")
+                {
+                    swap_btn.Enabled = false;
+                }
+                else
+                    swap_btn.Enabled = true;
+            }
+            {
+                if ((fifty_btn.Tag == "11"))
+                {
+                    fifty_btn.Enabled = false;
+                }
+                else
+                    fifty_btn.Enabled = true;
+            }
+            {
+                if ((audience_btn.Tag == "11"))
+                    audience_btn.Enabled = false;
+                else
+                    audience_btn.Enabled = true;
+            }
         }
 
         private void default_color()
@@ -352,20 +373,18 @@ namespace Projekt_w_grupie
                 menu.Show();
             }
         }
-
         private void fifty_btn_Click(object sender, EventArgs e)
         {
             fifty_btn.BackgroundImage = Properties.Resources._5050Disabled;
             pol_na_pol.Play();
             fifty_btn.Enabled = false;
-            Random randn = new Random();
-
-
+            fifty_btn.Tag = "11";
+            Random rnd = new Random();
             if (optionA_btn.Text == answer_textbox.Text)
             {
-               
-                int randomNumber = randn.Next(1, 3);
-                if(randomNumber==1)
+                
+                int randomNumber = rnd.Next(1, 3);
+                if (randomNumber == 1)
                 {
                     optionC_btn.Enabled = false;
                     optionD_btn.Enabled = false;
@@ -378,17 +397,19 @@ namespace Projekt_w_grupie
                 if (randomNumber == 3)
                 {
                     optionB_btn.Enabled = false;
-                    optionC_btn.Enabled = false; 
+                    optionC_btn.Enabled = false;
                 }
+
+
 
 
 
             }
             if (optionB_btn.Text == answer_textbox.Text)
             {
-                
-                              
-                int randomNumber = randn.Next(1, 3);
+
+
+                int randomNumber = rnd.Next(1, 3);
                 if (randomNumber == 1)
                 {
                     optionA_btn.Enabled = false;
@@ -404,14 +425,18 @@ namespace Projekt_w_grupie
                     optionC_btn.Enabled = false;
                     optionD_btn.Enabled = false;
                 }
+
+
 
 
             }
             if (optionC_btn.Text == answer_textbox.Text)
             {
-                
 
-                int randomNumber = randn.Next(1, 3);
+
+
+
+                int randomNumber = rnd.Next(1, 3);
                 if (randomNumber == 1)
                 {
                     optionA_btn.Enabled = false;
@@ -427,14 +452,16 @@ namespace Projekt_w_grupie
                     optionB_btn.Enabled = false;
                     optionD_btn.Enabled = false;
                 }
+
+
 
 
             }
             if (optionD_btn.Text == answer_textbox.Text)
             {
-                     
-                
-                int randomNumber = randn.Next(1, 3);
+
+
+                int randomNumber = rnd.Next(1, 3);
                 if (randomNumber == 1)
                 {
                     optionA_btn.Enabled = false;
@@ -452,26 +479,23 @@ namespace Projekt_w_grupie
                 }
 
 
+
+
             }
-
-
-
-
-
-
         }
 
         private void audience_btn_Click(object sender, EventArgs e)
         {
             audience_btn.BackgroundImage = Properties.Resources.audienceDisabled;
             audience_btn.Enabled = false;
+            audience_btn.Tag = "11";
         }
 
         private void swap_btn_Click(object sender, EventArgs e)
         {
             swap_btn.BackgroundImage = Properties.Resources.swapDisabled;
             swap_btn.Enabled = false;
-
+            swap_btn.Tag = "11";
         }
 
         private void add_buttons()
