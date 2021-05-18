@@ -496,6 +496,7 @@ namespace Projekt_w_grupie
             swap_btn.BackgroundImage = Properties.Resources.swapDisabled;
             swap_btn.Enabled = false;
             swap_btn.Tag = "11";
+            NextQuestion();
         }
 
         private void add_buttons()
