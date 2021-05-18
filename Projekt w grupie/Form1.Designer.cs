@@ -57,6 +57,8 @@
             this.btn_15 = new System.Windows.Forms.Button();
             this.btn_14 = new System.Windows.Forms.Button();
             this.btn_13 = new System.Windows.Forms.Button();
+            this.label_timer = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // answer_textbox
@@ -441,6 +443,23 @@
             this.btn_13.Text = "250 000$";
             this.btn_13.UseVisualStyleBackColor = false;
             // 
+            // label_timer
+            // 
+            this.label_timer.AutoSize = true;
+            this.label_timer.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_timer.Font = new System.Drawing.Font("Copperplate Gothic Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_timer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label_timer.Location = new System.Drawing.Point(262, 15);
+            this.label_timer.Name = "label_timer";
+            this.label_timer.Size = new System.Drawing.Size(118, 30);
+            this.label_timer.TabIndex = 41;
+            this.label_timer.Text = "label1";
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -448,6 +467,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.backGround3;
             this.ClientSize = new System.Drawing.Size(1110, 550);
+            this.Controls.Add(this.label_timer);
             this.Controls.Add(this.btn_15);
             this.Controls.Add(this.btn_14);
             this.Controls.Add(this.btn_13);
@@ -515,6 +535,8 @@
         private System.Windows.Forms.Button btn_15;
         private System.Windows.Forms.Button btn_14;
         private System.Windows.Forms.Button btn_13;
+        private System.Windows.Forms.Label label_timer;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

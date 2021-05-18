@@ -22,10 +22,12 @@ namespace Projekt_w_grupie
         BazaPytanDataContext DatabaseDC = new BazaPytanDataContext();
         List<int> pytania = new List<int>();
         Button[] prize = new System.Windows.Forms.Button[15];
+        public static int timeCounter = 60;
         public Form1()
         {
             InitializeComponent();
             add_buttons();
+            label_timer.Text = "";
             wygrana1000.SoundLocation = "wygrana1000.wav";
             wygrana2000.SoundLocation = "wygrana2000.wav";
             przegrana.SoundLocation = "Lose.wav";
@@ -69,6 +71,7 @@ namespace Projekt_w_grupie
                     while (pytania.Contains(db.Id));
 
             }
+            timer1.Enabled = true;
         }
 
 
@@ -178,7 +181,10 @@ namespace Projekt_w_grupie
             btn_enabled();
             default_color();
             delay.Enabled = false;
+            timer1.Enabled = true;
+            timeCounter = 60;
             nextQuestion_btn.Enabled = false;
+            label_timer.Text = "";
         }
 
         //delay
@@ -346,7 +352,7 @@ namespace Projekt_w_grupie
                 }
             }
 
-            
+
 
 
             delay.Enabled = false;
@@ -382,7 +388,7 @@ namespace Projekt_w_grupie
             Random rnd = new Random();
             if (optionA_btn.Text == answer_textbox.Text)
             {
-                
+
                 int randomNumber = rnd.Next(1, 3);
                 if (randomNumber == 1)
                 {
@@ -557,5 +563,12 @@ namespace Projekt_w_grupie
             przegrana.Play();
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timeCounter--;
+            if (A == true || B == true || C == true || D == true)
+                timer1.Stop();
+            label_timer.Text = timeCounter.ToString();
+        }
     }
 }
