@@ -376,7 +376,7 @@ namespace Projekt_w_grupie
                 if (randomNumber == 3)
                 {
                     optionB_btn.Enabled = false;
-                    optionC_btn.Enabled = false;
+                    optionC_btn.Enabled = false; 
                 }
 
 
