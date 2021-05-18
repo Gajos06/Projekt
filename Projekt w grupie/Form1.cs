@@ -465,6 +465,26 @@ namespace Projekt_w_grupie
         {
             audience_btn.BackgroundImage = Properties.Resources.audienceDisabled;
             audience_btn.Enabled = false;
+            Random randn = new Random();
+
+
+            if (optionA_btn.Text == answer_textbox.Text)
+            {
+                int randomNumber = randn.Next(1, 3);
+
+            }
+            if (optionB_btn.Text == answer_textbox.Text)
+            {
+
+            }
+            if (optionC_btn.Text == answer_textbox.Text)
+            {
+
+            }
+            if (optionD_btn.Text == answer_textbox.Text)
+            {
+
+            }
         }
 
         private void swap_btn_Click(object sender, EventArgs e)
