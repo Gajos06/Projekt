@@ -325,6 +325,8 @@ namespace Projekt_w_grupie
                 }
             }
 
+            
+
 
             delay.Enabled = false;
             schodki();
