@@ -50,7 +50,7 @@ namespace Projekt_w_grupie
 
         public void start_btn_Click(object sender, EventArgs e)
         {
-            enterName name = new enterName();
+            Form1 name = new Form1();
             this.Hide();
             name.Show();
 
