@@ -13,6 +13,8 @@ namespace Projekt_w_grupie
 {
     public partial class Form1 : Form
     {
+        
+
         public static bool A = false;
         public static bool B = false;
         public static bool C = false;
@@ -24,6 +26,10 @@ namespace Projekt_w_grupie
         Button[] prize = new System.Windows.Forms.Button[15];
         public Form1()
         {
+            
+           
+
+
             InitializeComponent();
             add_buttons();
             wygrana1000.SoundLocation = "wygrana1000.wav";
@@ -31,6 +37,7 @@ namespace Projekt_w_grupie
             przegrana.SoundLocation = "Lose.wav";
             wygrana500.SoundLocation = "wygrana500.wav";
             pol_na_pol.SoundLocation = "50-50.wav";
+            
         }
 
 
@@ -489,6 +496,131 @@ namespace Projekt_w_grupie
             audience_btn.BackgroundImage = Properties.Resources.audienceDisabled;
             audience_btn.Enabled = false;
             audience_btn.Tag = "11";
+            Random rnd = new Random();
+            int randomNumber = rnd.Next(1, 3);
+            int randomOne = rnd.Next(1, 15 + 15);
+            int randomTwo = rnd.Next(1, 15 + 5);
+            int randomThree = rnd.Next(1, 15);
+            int WidowniaA = 0;
+            int WidowniaB = 0;
+            int WidowniaC = 0;
+            int WidowniaD = 0;
+
+            
+            
+            
+
+
+
+
+            if (optionA_btn.Text == answer_textbox.Text)
+            {
+                WidowniaA += randomOne;
+
+
+                if (randomNumber == 1)
+                {
+                    WidowniaB += randomTwo;
+                    WidowniaC += randomThree;
+                    WidowniaD += randomThree;
+                }
+                if (randomNumber == 2)
+                {
+                    WidowniaC += randomTwo;
+                    WidowniaD += randomThree;
+                    WidowniaB += randomThree;
+                }
+                if (randomNumber == 3)
+                {
+                    WidowniaD += randomTwo;
+                    WidowniaB += randomThree;
+                    WidowniaC += randomThree;
+                }
+            }
+            if (optionB_btn.Text == answer_textbox.Text)
+            {
+                WidowniaB += randomOne;
+
+                if (randomNumber == 1)
+                {
+                    WidowniaA += randomTwo;
+                    WidowniaC += randomThree;
+                    WidowniaD += randomThree;
+                }
+                if (randomNumber == 2)
+                {
+                    WidowniaC += randomTwo;
+                    WidowniaD += randomThree;
+                    WidowniaA += randomThree;
+                }
+                if (randomNumber == 3)
+                {
+                    WidowniaD += randomTwo;
+                    WidowniaA += randomThree;
+                    WidowniaC += randomThree;
+                }
+
+
+
+            }
+            if (optionC_btn.Text == answer_textbox.Text)
+            {
+                WidowniaC += randomOne;
+
+                if (randomNumber == 1)
+                {
+                    WidowniaA += randomTwo;
+                    WidowniaB += randomThree;
+                    WidowniaD += randomThree;
+                }
+                if (randomNumber == 2)
+                {
+                    WidowniaA += randomTwo;
+                    WidowniaD += randomThree;
+                    WidowniaB += randomThree;
+                }
+                if (randomNumber == 3)
+                {
+                    WidowniaD += randomTwo;
+                    WidowniaB += randomThree;
+                    WidowniaA += randomThree;
+                }
+
+
+
+
+
+            }
+            if (optionD_btn.Text == answer_textbox.Text)
+            {
+                WidowniaD += randomOne;
+
+                if (randomNumber == 1)
+                {
+                    WidowniaB += randomTwo;
+                    WidowniaC += randomThree;
+                    WidowniaA += randomThree;
+                }
+                if (randomNumber == 2)
+                {
+                    WidowniaC += randomTwo;
+                    WidowniaA += randomThree;
+                    WidowniaB += randomThree;
+                }
+                if (randomNumber == 3)
+                {
+                    WidowniaA += randomTwo;
+                    WidowniaB += randomThree;
+                    WidowniaC += randomThree;
+                }
+
+
+
+
+            }
+
+            Widownia Audience = new Widownia(WidowniaA, WidowniaB, WidowniaC, WidowniaD);
+            Audience.Show();
         }
 
         private void swap_btn_Click(object sender, EventArgs e)

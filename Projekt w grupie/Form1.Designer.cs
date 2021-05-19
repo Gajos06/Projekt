@@ -57,6 +57,10 @@
             this.btn_15 = new System.Windows.Forms.Button();
             this.btn_14 = new System.Windows.Forms.Button();
             this.btn_13 = new System.Windows.Forms.Button();
+            this.progressBarA = new System.Windows.Forms.ProgressBar();
+            this.progressBarC = new System.Windows.Forms.ProgressBar();
+            this.progressBarB = new System.Windows.Forms.ProgressBar();
+            this.progressBarD = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // answer_textbox
@@ -441,6 +445,40 @@
             this.btn_13.Text = "250 000$";
             this.btn_13.UseVisualStyleBackColor = false;
             // 
+            // progressBarA
+            // 
+            this.progressBarA.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.progressBarA.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.progressBarA.Location = new System.Drawing.Point(48, 103);
+            this.progressBarA.Maximum = 30;
+            this.progressBarA.Name = "progressBarA";
+            this.progressBarA.Size = new System.Drawing.Size(100, 12);
+            this.progressBarA.TabIndex = 41;
+            // 
+            // progressBarC
+            // 
+            this.progressBarC.Location = new System.Drawing.Point(48, 141);
+            this.progressBarC.Maximum = 30;
+            this.progressBarC.Name = "progressBarC";
+            this.progressBarC.Size = new System.Drawing.Size(100, 12);
+            this.progressBarC.TabIndex = 42;
+            // 
+            // progressBarB
+            // 
+            this.progressBarB.Location = new System.Drawing.Point(48, 123);
+            this.progressBarB.Maximum = 30;
+            this.progressBarB.Name = "progressBarB";
+            this.progressBarB.Size = new System.Drawing.Size(100, 12);
+            this.progressBarB.TabIndex = 44;
+            // 
+            // progressBarD
+            // 
+            this.progressBarD.Location = new System.Drawing.Point(48, 159);
+            this.progressBarD.Maximum = 30;
+            this.progressBarD.Name = "progressBarD";
+            this.progressBarD.Size = new System.Drawing.Size(100, 12);
+            this.progressBarD.TabIndex = 45;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -448,6 +486,10 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.backGround3;
             this.ClientSize = new System.Drawing.Size(1110, 550);
+            this.Controls.Add(this.progressBarD);
+            this.Controls.Add(this.progressBarB);
+            this.Controls.Add(this.progressBarC);
+            this.Controls.Add(this.progressBarA);
             this.Controls.Add(this.btn_15);
             this.Controls.Add(this.btn_14);
             this.Controls.Add(this.btn_13);
@@ -515,6 +557,10 @@
         private System.Windows.Forms.Button btn_15;
         private System.Windows.Forms.Button btn_14;
         private System.Windows.Forms.Button btn_13;
+        private System.Windows.Forms.ProgressBar progressBarA;
+        private System.Windows.Forms.ProgressBar progressBarC;
+        private System.Windows.Forms.ProgressBar progressBarB;
+        private System.Windows.Forms.ProgressBar progressBarD;
     }
 }
 
