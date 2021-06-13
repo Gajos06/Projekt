@@ -689,13 +689,13 @@ namespace Projekt_w_grupie
 
         private void MuzykaWygrana()
         {
-            if (counter == 0)
+            if (counter == 0 || counter == 1 || counter == 2 || counter == 3)
             {
                 wygrana500.Play();
             }
 
 
-            if (counter == 1)
+            if (counter == 4 || counter == 8)
             {
                 wygrana1000.Play();
             }
@@ -708,6 +708,12 @@ namespace Projekt_w_grupie
         private void MuzykaPrzegrana()
         {
             przegrana.Play();
+            Form2 okno = new Form2(suma_pkt);
+            okno.Show();
+            timeCounter = 1000;
+            this.Hide();
+            
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
