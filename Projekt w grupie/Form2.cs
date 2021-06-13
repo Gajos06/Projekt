@@ -15,7 +15,8 @@ namespace Projekt_w_grupie
         public Form2(double suma_pkt)
         {
             InitializeComponent();
-            button2.Text = suma_pkt.ToString(); ;
+            button2.Text = suma_pkt.ToString();
+            button3.Text = enterName.nickName;
         }
 
         private void nextQuestion_btn_Click_1(object sender, EventArgs e)

@@ -119,3 +119,21 @@ C:\Users\Bartek\Source\Repos\Gajos06\Projekt\Projekt w grupie\bin\Debug\Projekt 
 C:\Users\Bartek\Source\Repos\Gajos06\Projekt\Projekt w grupie\bin\Debug\Projekt w grupie.pdb
 C:\Users\Bartek\Source\Repos\Gajos06\Projekt\Projekt w grupie\obj\Debug\Projekt_w_grupie.Widownia.resources
 C:\Users\kamil\source\repos\Projekt1\Projekt w grupie\obj\Debug\Projekt_w_grupie.Widownia.resources
+C:\Users\Bartek\Source\Repos\Projekt7\Projekt w grupie\bin\Debug\BazaPytan.mdf
+C:\Users\Bartek\Source\Repos\Projekt7\Projekt w grupie\bin\Debug\BazaPytan_log.ldf
+C:\Users\Bartek\Source\Repos\Projekt7\Projekt w grupie\bin\Debug\Projekt w grupie.exe.config
+C:\Users\Bartek\Source\Repos\Projekt7\Projekt w grupie\bin\Debug\Projekt w grupie.exe
+C:\Users\Bartek\Source\Repos\Projekt7\Projekt w grupie\bin\Debug\Projekt w grupie.pdb
+C:\Users\Bartek\Source\Repos\Projekt7\Projekt w grupie\obj\Debug\Projekt w grupie.csprojAssemblyReference.cache
+C:\Users\Bartek\Source\Repos\Projekt7\Projekt w grupie\obj\Debug\Projekt_w_grupie.Credits.resources
+C:\Users\Bartek\Source\Repos\Projekt7\Projekt w grupie\obj\Debug\Projekt_w_grupie.enterName.resources
+C:\Users\Bartek\Source\Repos\Projekt7\Projekt w grupie\obj\Debug\Projekt_w_grupie.Form1.resources
+C:\Users\Bartek\Source\Repos\Projekt7\Projekt w grupie\obj\Debug\Projekt_w_grupie.Widownia.resources
+C:\Users\Bartek\Source\Repos\Projekt7\Projekt w grupie\obj\Debug\Projekt_w_grupie.MainMenu.resources
+C:\Users\Bartek\Source\Repos\Projekt7\Projekt w grupie\obj\Debug\Projekt_w_grupie.Properties.Resources.resources
+C:\Users\Bartek\Source\Repos\Projekt7\Projekt w grupie\obj\Debug\Projekt_w_grupie.ScoreBoard.resources
+C:\Users\Bartek\Source\Repos\Projekt7\Projekt w grupie\obj\Debug\Projekt w grupie.csproj.GenerateResource.cache
+C:\Users\Bartek\Source\Repos\Projekt7\Projekt w grupie\obj\Debug\Projekt w grupie.csproj.CoreCompileInputs.cache
+C:\Users\Bartek\Source\Repos\Projekt7\Projekt w grupie\obj\Debug\Projekt w grupie.exe
+C:\Users\Bartek\Source\Repos\Projekt7\Projekt w grupie\obj\Debug\Projekt w grupie.pdb
+C:\Users\Bartek\Source\Repos\Projekt7\Projekt w grupie\obj\Debug\Projekt_w_grupie.Form2.resources

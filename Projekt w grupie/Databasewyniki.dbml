@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="wyniki" Class="DatabasewynikiDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=&quot;C:\Users\Bartek\source\repos\Projekt3\Projekt w grupie\wyniki.mdf&quot;;Integrated Security=True;Connect Timeout=30" SettingsObjectName="Projekt_w_grupie.Properties.Settings" SettingsPropertyName="wynikiConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.wynik" Member="wyniks">
+    <Type Name="wynik">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nazwa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Wynik" Member="Wynik1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

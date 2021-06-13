@@ -33,6 +33,7 @@ namespace Projekt_w_grupie
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // nextQuestion_btn
@@ -40,7 +41,7 @@ namespace Projekt_w_grupie
             this.nextQuestion_btn.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.button5;
             this.nextQuestion_btn.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
             this.nextQuestion_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nextQuestion_btn.Location = new System.Drawing.Point(55, 203);
+            this.nextQuestion_btn.Location = new System.Drawing.Point(55, 240);
             this.nextQuestion_btn.Name = "nextQuestion_btn";
             this.nextQuestion_btn.Size = new System.Drawing.Size(221, 51);
             this.nextQuestion_btn.TabIndex = 15;
@@ -53,7 +54,7 @@ namespace Projekt_w_grupie
             this.button1.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.button5;
             this.button1.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(55, 146);
+            this.button1.Location = new System.Drawing.Point(55, 183);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(221, 51);
             this.button1.TabIndex = 16;
@@ -66,7 +67,7 @@ namespace Projekt_w_grupie
             this.button2.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.button5;
             this.button2.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(90, 73);
+            this.button2.Location = new System.Drawing.Point(90, 123);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(160, 54);
             this.button2.TabIndex = 17;
@@ -85,13 +86,25 @@ namespace Projekt_w_grupie
             this.label1.TabIndex = 18;
             this.label1.Text = "Twój Wynik";
             // 
+            // button3
+            // 
+            this.button3.BackgroundImage = global::Projekt_w_grupie.Properties.Resources.button5;
+            this.button3.Font = new System.Drawing.Font("Copperplate Gothic Bold", 14.25F);
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.Location = new System.Drawing.Point(90, 63);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(160, 54);
+            this.button3.TabIndex = 19;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackgroundImage = global::Projekt_w_grupie.Properties.Resources._135153_blue_solid_backgrounds_screensaver_2560x1600_h;
-            this.ClientSize = new System.Drawing.Size(334, 284);
+            this.ClientSize = new System.Drawing.Size(334, 310);
             this.ControlBox = false;
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -112,5 +125,6 @@ namespace Projekt_w_grupie
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button3;
     }
 }
