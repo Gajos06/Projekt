@@ -18,7 +18,7 @@ namespace Projekt_w_grupie
             InitializeComponent();
             Loadwyniki();
 
-           //listBox1.DisplayMember = "Nazwa";
+           listBox1.Sorted = true;
         }
 
         private void Loadwyniki()

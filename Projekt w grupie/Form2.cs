@@ -17,12 +17,9 @@ namespace Projekt_w_grupie
         {
             InitializeComponent();
             button2.Text = suma_pkt.ToString();
-            button3.Text = enterName.nickName;
-            
+            button3.Text = enterName.nickName;          
         }
-
-       
-
+  
         private void nextQuestion_btn_Click_1(object sender, EventArgs e)
         {
             wynik newwynik = new wynik();
@@ -32,8 +29,7 @@ namespace Projekt_w_grupie
             DatabaseDC.wyniks.InsertOnSubmit(newwynik);
             DatabaseDC.SubmitChanges();
 
-            Application.Exit();
-            
+            Application.Exit();          
         }
 
         private void button1_Click(object sender, EventArgs e)

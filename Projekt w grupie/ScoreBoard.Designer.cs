@@ -40,7 +40,7 @@ namespace Projekt_w_grupie
             this.start_btn.Image = global::Projekt_w_grupie.Properties.Resources.general;
             this.start_btn.Location = new System.Drawing.Point(12, 12);
             this.start_btn.Name = "start_btn";
-            this.start_btn.Size = new System.Drawing.Size(488, 38);
+            this.start_btn.Size = new System.Drawing.Size(471, 38);
             this.start_btn.TabIndex = 1;
             this.start_btn.Text = "    NICK                                                                         " +
     "          WYNIK";
@@ -49,10 +49,12 @@ namespace Projekt_w_grupie
             // 
             // listBox1
             // 
+            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 31;
             this.listBox1.Location = new System.Drawing.Point(12, 56);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(488, 342);
+            this.listBox1.Size = new System.Drawing.Size(471, 314);
             this.listBox1.TabIndex = 2;
             // 
             // ScoreBoard
@@ -60,7 +62,7 @@ namespace Projekt_w_grupie
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Projekt_w_grupie.Properties.Resources._135153_blue_solid_backgrounds_screensaver_2560x1600_h;
-            this.ClientSize = new System.Drawing.Size(512, 406);
+            this.ClientSize = new System.Drawing.Size(493, 406);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.start_btn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;

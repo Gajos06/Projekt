@@ -13,7 +13,7 @@ namespace Projekt_w_grupie
     {
         public override string ToString()
         {
-            return Nazwa +" "+ Wynik1;
+            return  Wynik1 + "                      "+ Nazwa;
         }
     }
 }
