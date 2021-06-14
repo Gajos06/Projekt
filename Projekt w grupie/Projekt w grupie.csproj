@@ -79,11 +79,6 @@
     <Compile Include="Credits.Designer.cs">
       <DependentUpon>Credits.cs</DependentUpon>
     </Compile>
-    <Compile Include="Databasewyniki.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Databasewyniki.dbml</DependentUpon>
-    </Compile>
     <Compile Include="enterName.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +96,11 @@
     </Compile>
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NowyElement.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NowyElement.dbml</DependentUpon>
     </Compile>
     <Compile Include="Widownia.cs">
       <SubType>Form</SubType>
@@ -135,6 +135,9 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="NowyElement.dbml.layout">
+      <DependentUpon>NowyElement.dbml</DependentUpon>
+    </None>
     <EmbeddedResource Include="Widownia.resx">
       <DependentUpon>Widownia.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,13 +165,10 @@
     <None Include="BazaPytan.dbml.layout">
       <DependentUpon>BazaPytan.dbml</DependentUpon>
     </None>
-    <None Include="Databasewyniki.dbml">
+    <None Include="NowyElement.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>Databasewyniki.designer.cs</LastGenOutput>
+      <LastGenOutput>NowyElement.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
-    </None>
-    <None Include="Databasewyniki.dbml.layout">
-      <DependentUpon>Databasewyniki.dbml</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

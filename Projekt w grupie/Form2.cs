@@ -12,7 +12,7 @@ namespace Projekt_w_grupie
 {
     public partial class Form2 : Form
     {
-        DatabasewynikiDataContext DatabaseDC = new DatabasewynikiDataContext();
+        NowyElementDataContext DatabaseDC = new NowyElementDataContext();
         public Form2(double suma_pkt)
         {
             InitializeComponent();
@@ -22,23 +22,25 @@ namespace Projekt_w_grupie
   
         private void nextQuestion_btn_Click_1(object sender, EventArgs e)
         {
-            wynik newwynik = new wynik();
-            newwynik.Nazwa = button3.Text;
-            newwynik.Wynik1 = button2.Text;
+            wyniki newwynik = new wyniki();
+            newwynik.Nazwa_użytkownika = button3.Text;
+            newwynik.Punktacja = button2.Text;
 
-            DatabaseDC.wyniks.InsertOnSubmit(newwynik);
+            DatabaseDC.wyniki.InsertOnSubmit(newwynik);
             DatabaseDC.SubmitChanges();
+            MainMenu menu = new MainMenu();
+            this.Close();
+            menu.Show();
 
-            Application.Exit();          
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            wynik newwynik = new wynik();
-            newwynik.Nazwa = button3.Text;
-            newwynik.Wynik1 = button2.Text;
+            wyniki newwynik = new wyniki();
+            newwynik.Nazwa_użytkownika = button3.Text;
+            newwynik.Punktacja = button2.Text;
 
-            DatabaseDC.wyniks.InsertOnSubmit(newwynik);
+            DatabaseDC.wyniki.InsertOnSubmit(newwynik);
             DatabaseDC.SubmitChanges();
 
             this.Close();
@@ -46,9 +48,5 @@ namespace Projekt_w_grupie
             gra.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

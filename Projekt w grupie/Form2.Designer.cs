@@ -72,7 +72,6 @@ namespace Projekt_w_grupie
             this.button2.Size = new System.Drawing.Size(160, 54);
             this.button2.TabIndex = 17;
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 

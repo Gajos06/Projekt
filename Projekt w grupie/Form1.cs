@@ -375,19 +375,7 @@ namespace Projekt_w_grupie
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("Czy na pewno chcesz wyjść?",
-                      "Wyjście",
-                       MessageBoxButtons.YesNo,
-                       MessageBoxIcon.Information) == DialogResult.No)
-            {
-                e.Cancel = true;
-            }
-            else
-            {
-                this.Hide();
-                MainMenu menu = new MainMenu();
-                menu.Show();
-            }
+
         }
         private void fifty_btn_Click(object sender, EventArgs e)
         {
@@ -689,7 +677,7 @@ namespace Projekt_w_grupie
 
         private void MuzykaWygrana()
         {
-            if (counter == 0 || counter == 1 || counter == 2 || counter == 3)
+            if (counter == 0 || counter == 1 || counter == 2 || counter == 3 || counter == 5 || counter == 6 || counter == 9)
             {
                 wygrana500.Play();
             }
@@ -699,7 +687,7 @@ namespace Projekt_w_grupie
             {
                 wygrana1000.Play();
             }
-            if (counter == 2)
+            if (counter == 10 || counter == 11 || counter == 12)
             {
                 wygrana2000.Play();
             }
@@ -719,10 +707,16 @@ namespace Projekt_w_grupie
         private void timer1_Tick(object sender, EventArgs e)
         {
             timeCounter--;
+            if (timeCounter == 0)
+            {
+                timer1.Stop();
+                MuzykaPrzegrana();
+
+            }
             if (A == true || B == true || C == true || D == true)
             {
                 timer1.Stop();
-                pkt = timeCounter * 10;               
+                pkt = timeCounter * 10;
             }
             label_timer.Text = timeCounter.ToString();
         }

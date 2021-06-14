@@ -12,7 +12,7 @@ namespace Projekt_w_grupie
 {
     public partial class ScoreBoard : Form
     {
-        DatabasewynikiDataContext DatabaseDC = new DatabasewynikiDataContext(); 
+        NowyElementDataContext DatabaseDC = new NowyElementDataContext(); 
         public ScoreBoard()
         {
             InitializeComponent();
@@ -23,7 +23,7 @@ namespace Projekt_w_grupie
 
         private void Loadwyniki()
         {
-           foreach (wynik w in DatabaseDC.wyniks)
+           foreach (wyniki w in DatabaseDC.wyniki)
             {
                 listBox1.Items.Add(w);
             }

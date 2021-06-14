@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Projekt_w_grupie
 {
-    partial class wynik
+    partial class wyniki
 
 
 
     {
         public override string ToString()
         {
-            return  Wynik1 + "                      "+ Nazwa;
+            return   Nazwa_użytkownika + "                      "+ Punktacja;
         }
     }
 }
