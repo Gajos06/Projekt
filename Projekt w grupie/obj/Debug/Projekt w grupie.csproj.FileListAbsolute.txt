@@ -174,3 +174,4 @@ C:\Users\Bartek\Source\Repos\Projekt9\Projekt w grupie\obj\Debug\Projekt w grupi
 C:\Users\Bartek\Source\Repos\Projekt9\Projekt w grupie\obj\Debug\Projekt w grupie.exe
 C:\Users\Bartek\Source\Repos\Projekt9\Projekt w grupie\obj\Debug\Projekt w grupie.pdb
 C:\Users\kamil\source\repos\Projekt1\Projekt w grupie\obj\Debug\Projekt_w_grupie.Form2.resources
+C:\Users\kamil\source\repos\Projekt1\Projekt w grupie\bin\Debug\Database1.mdf

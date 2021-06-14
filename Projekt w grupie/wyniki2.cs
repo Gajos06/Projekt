@@ -13,7 +13,7 @@ namespace Projekt_w_grupie
     {
         public override string ToString()
         {
-            return   Nazwa_użytkownika + "                      "+ Punktacja;
+            return   Punktacja+ "                      "+ Nazwa_użytkownika;
         }
     }
 }

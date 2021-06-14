@@ -55,6 +55,7 @@ namespace Projekt_w_grupie
             this.listBox1.Location = new System.Drawing.Point(12, 56);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(471, 314);
+            this.listBox1.Sorted = true;
             this.listBox1.TabIndex = 2;
             // 
             // ScoreBoard
