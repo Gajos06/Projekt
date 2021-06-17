@@ -8,39 +8,32 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Collections;
+using System.Collections.Generic;
 
 
 namespace Projekt_w_grupie
 {
     public partial class ScoreBoard : Form
     {
-        NowyElementDataContext DatabaseDC = new NowyElementDataContext(); 
+        NowyElementDataContext DatabaseDC = new NowyElementDataContext();
+        int a1,a2;
         public ScoreBoard()
         {
             InitializeComponent();
             Loadwyniki();
-            //ArrayList list = new ArrayList();
-            //foreach (object o in list)
-            //{
-            //    list.Add(o);
-            //}
-            //list.Sort();
-            //list.Reverse();
-            //listBox1.Items.Clear();
-            //foreach (object o in list)
-            //{
-            //    listBox1.Items.Add(o);
-            //}
+            
 
         }
 
         private void Loadwyniki()
         {
-            foreach (wyniki w in DatabaseDC.wyniki)
-            {
-                listBox1.Items.Add(w);
-            }
+        
+
+
+
         }
+        
+        
 
         private void ScoreBoard_FormClosing(object sender, FormClosingEventArgs e)
         {
